@@ -1,0 +1,11 @@
+# Flutter build files
+flutter_app/build/
+flutter_app/.dart_tool/
+flutter_app/.idea/
+flutter_app/.vscode/
+flutter_app/.flutter-plugins
+flutter_app/.flutter-plugins-dependencies
+
+# Node.js modules
+backend/node_modules/
+backend/.env
