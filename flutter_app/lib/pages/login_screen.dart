@@ -16,6 +16,18 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void signUserIn() {
     // TODO: Thực hiện chức năng đăng nhập ở đây
+    String username = usernameController.text.trim();
+    String password = passwordController.text.trim();
+
+    if (username.isNotEmpty && password.isNotEmpty) {
+      // Chuyển sang màn hình Home
+      Navigator.pushReplacementNamed(context, '/home');
+    } else {
+      // Hiển thị thông báo nếu thiếu thông tin
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Vui lòng nhập Username và Password")),
+      );
+    }
   }
 
   void signInWithGoogle() {
@@ -102,6 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     // Button Login
                     MyButton(
                       onTap: signUserIn,
+
                     ),
 
                     const SizedBox(height: 30),
