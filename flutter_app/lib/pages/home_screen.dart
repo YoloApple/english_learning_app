@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/profile_screen.dart';
+import 'package:flutter_app/pages/settings_screen.dart';
 
 import '../components/home_content.dart';
-import 'leaderboard_screen.dart';
+import 'study_dashboard.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,8 +18,9 @@ class _HomeScreenState extends State<HomeScreen> {
   // Danh sách màn hình
   static final List<Widget> _screens = [
     const HomeContent(),    // Trang chính
-    const LeaderboardScreen(), // Bảng xếp hạng
-    const ProfileScreen(),  // Hồ sơ cá nhân
+    const StudyDashboard(), // Bảng xếp hạng
+    const ProfileScreen(),
+    const SettingsScreen()// Hồ sơ cá nhân
   ];
 
   // Xử lý khi chọn tab
@@ -45,11 +47,15 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.leaderboard),
-            label: "Leaderboard",
+            label: "Study DashBoard",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: "Profile",
+          ),
+          BottomNavigationBarItem(
+              icon:Icon(Icons.settings),
+              label: "Settings"
           ),
         ],
       ),
