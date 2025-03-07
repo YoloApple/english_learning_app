@@ -1,11 +1,17 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/register_screen.dart';
+import 'package:provider/provider.dart';
 import 'package:flutter_app/providers/setting_provider.dart';
-import 'package:provider/provider.dart'; // Đã cài provider chưa?
 import 'package:flutter_app/pages/home_screen.dart';
 import 'package:flutter_app/pages/login_screen.dart';
- // Kiểm tra đường dẫn!
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(
     ChangeNotifierProvider(
       create: (context) => SettingsProvider(),
@@ -30,6 +36,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const LoginScreen(),
         '/home': (context) => const HomeScreen(),
+        '/register': (context) => const RegisterScreen(),
       },
     );
   }

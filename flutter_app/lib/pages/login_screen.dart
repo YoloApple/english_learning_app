@@ -1,7 +1,11 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_app/components/my_button.dart';
 import 'package:flutter_app/components/my_text_field.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -14,20 +18,79 @@ class _LoginScreenState extends State<LoginScreen> {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
 
-  void signUserIn() {
+  void signUserIn() async {
     String username = usernameController.text.trim();
     String password = passwordController.text.trim();
 
     if (username.isNotEmpty && password.isNotEmpty) {
-      Navigator.pushReplacementNamed(context, '/home');
+      // Hiển thị Loading Dialog
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) => const Center(child: CircularProgressIndicator()),
+      );
+
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        String? savedEmail = prefs.getString('email');
+
+        if (savedEmail == null) {
+          QuerySnapshot querySnapshot = await FirebaseFirestore.instance
+              .collection('users')
+              .where('username', isEqualTo: username)
+              .limit(1)
+              .get();
+
+          if (querySnapshot.docs.isNotEmpty) {
+            savedEmail = querySnapshot.docs.first['email'];
+            await prefs.setString('email', savedEmail!);
+          } else {
+            Navigator.pop(context); // Đóng loading
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text("Không tìm thấy tài khoản.")),
+            );
+            return;
+          }
+        }
+
+        // Đăng nhập
+        await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: savedEmail,
+          password: password,
+        );
+
+        Navigator.pop(context); // Đóng loading
+        Navigator.pushReplacementNamed(context, '/home');
+      } catch (e) {
+        Navigator.pop(context); // Đóng loading
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text("Lỗi đăng nhập: ${e.toString()}")),
+        );
+      }
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text("Vui lòng nhập Username và Password")),
       );
     }
   }
+  void signInWithGoogle() async {
+    try {
+      final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+      final GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
 
-  void signInWithGoogle() {}
+      final credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth?.accessToken,
+        idToken: googleAuth?.idToken,
+      );
+
+      await FirebaseAuth.instance.signInWithCredential(credential);
+      Navigator.pushReplacementNamed(context, '/home');
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text("Lỗi Google Sign-In: ${e.toString()}")),
+      );
+    }
+  }
 
   void signInWithFacebook() {}
 
@@ -169,6 +232,22 @@ class _LoginScreenState extends State<LoginScreen> {
                               const SizedBox(width: 10),
                               const Text('Facebook'),
                             ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text("Don't have an account? "),
+                      GestureDetector(
+                        onTap: () => Navigator.pushNamed(context, '/register'),
+                        child: Text(
+                          "Sign Up",
+                          style: TextStyle(
+                            color: Colors.blueAccent,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
