@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/register_screen.dart';
+import 'package:flutter_app/pages/vocab_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_app/providers/setting_provider.dart';
 import 'package:flutter_app/pages/home_screen.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const LoginScreen(),
         '/home': (context) => const HomeScreen(),
         '/register': (context) => const RegisterScreen(),
+        '/vocab': (context) => const VocabScreen(),
       },
     );
   }

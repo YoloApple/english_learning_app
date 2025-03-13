@@ -15,15 +15,14 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final usernameController = TextEditingController();
+  final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
   void signUserIn() async {
-    String username = usernameController.text.trim();
+    FocusScope.of(context).unfocus(); // Bỏ focus trước khi lấy dữ liệu
     String password = passwordController.text.trim();
 
-    if (username.isNotEmpty && password.isNotEmpty) {
-      // Hiển thị Loading Dialog
+    if (password.isNotEmpty) {
       showDialog(
         context: context,
         barrierDismissible: false,
@@ -34,45 +33,73 @@ class _LoginScreenState extends State<LoginScreen> {
         final prefs = await SharedPreferences.getInstance();
         String? savedEmail = prefs.getString('email');
 
-        if (savedEmail == null) {
-          QuerySnapshot querySnapshot = await FirebaseFirestore.instance
-              .collection('users')
-              .where('username', isEqualTo: username)
-              .limit(1)
-              .get();
+        print('Email lấy từ SharedPreferences: $savedEmail'); // Log để kiểm tra
 
-          if (querySnapshot.docs.isNotEmpty) {
-            savedEmail = querySnapshot.docs.first['email'];
-            await prefs.setString('email', savedEmail!);
-          } else {
-            Navigator.pop(context); // Đóng loading
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text("Không tìm thấy tài khoản.")),
-            );
-            return;
-          }
+        if (savedEmail == null) {
+          Navigator.pop(context);
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text("Không tìm thấy email. Vui lòng đăng ký tài khoản.")),
+          );
+          return;
         }
 
-        // Đăng nhập
-        await FirebaseAuth.instance.signInWithEmailAndPassword(
+        UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
           email: savedEmail,
           password: password,
         );
 
-        Navigator.pop(context); // Đóng loading
+        // Kiểm tra xem email đã xác minh chưa
+        User? user = userCredential.user;
+        if (user != null && !user.emailVerified) {
+          await user.sendEmailVerification();
+          Navigator.pop(context);
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text("Vui lòng xác minh email của bạn trước khi đăng nhập.")),
+          );
+          return;
+        }
+
+        await Future.delayed(const Duration(seconds: 2));
+
+        Navigator.pop(context);
         Navigator.pushReplacementNamed(context, '/home');
-      } catch (e) {
-        Navigator.pop(context); // Đóng loading
+      } on FirebaseAuthException catch (e) {
+        Navigator.pop(context);
+        String errorMessage;
+
+        switch (e.code) {
+          case 'user-not-found':
+            errorMessage = "Tài khoản không tồn tại.";
+            break;
+          case 'wrong-password':
+            errorMessage = "Sai mật khẩu.";
+            break;
+          case 'invalid-email':
+            errorMessage = "Email không hợp lệ.";
+            break;
+          case 'user-disabled':
+            errorMessage = "Tài khoản này đã bị vô hiệu hóa.";
+            break;
+          default:
+            errorMessage = "Đăng nhập thất bại. Vui lòng thử lại.";
+        }
+
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Lỗi đăng nhập: ${e.toString()}")),
+          SnackBar(content: Text(errorMessage)),
+        );
+      } catch (e) {
+        Navigator.pop(context);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text("Lỗi không xác định: ${e.toString()}")),
         );
       }
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Vui lòng nhập Username và Password")),
+        const SnackBar(content: Text("Vui lòng nhập Password")),
       );
     }
   }
+
   void signInWithGoogle() async {
     try {
       final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
@@ -145,15 +172,15 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 40),
                   MyTextField(
-                    controller: usernameController,
+                    controller: emailController,
                     hintText: 'Username',
-                    obsecureText: false,
+                    obsecureText: false, autofocus: false,
                   ),
                   const SizedBox(height: 25),
                   MyTextField(
                     controller: passwordController,
                     hintText: 'Password',
-                    obsecureText: true,
+                    obsecureText: true, autofocus: false,
                   ),
                   const SizedBox(height: 10),
                   Align(

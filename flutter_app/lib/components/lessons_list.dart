@@ -32,54 +32,61 @@ class LessonsList extends StatelessWidget {
         itemBuilder: (context, index) {
           final lesson = lessons[index];
 
-          return Container(
-            width: 180, // Độ rộng của từng mục bài học
-            margin: const EdgeInsets.symmetric(horizontal: 10),
-            padding: const EdgeInsets.all(12),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(15),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.shade300,
-                  blurRadius: 8,
-                  spreadRadius: 2,
-                  offset: const Offset(0, 4),
-                ),
-              ],
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Hình ảnh bài học
-                Image.asset(
-                  lesson["image"],
-                  height: 50,
-                  width: 50,
-                  fit: BoxFit.contain,
-                ),
-                const SizedBox(height: 10),
-
-                // Tiêu đề bài học
-                Text(
-                  lesson["title"],
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blueAccent,
+          return GestureDetector(
+            onTap: (){
+              if (lesson["title"]=="Basic English"){
+                Navigator.pushReplacementNamed(context, '/vocab');
+              }
+            },
+            child: Container(
+              width: 180, // Độ rộng của từng mục bài học
+              margin: const EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(15),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.shade300,
+                    blurRadius: 8,
+                    spreadRadius: 2,
+                    offset: const Offset(0, 4),
                   ),
-                ),
-                const SizedBox(height: 8),
-
-                // Thanh tiến trình
-                LinearProgressIndicator(
-                  value: lesson["progress"],
-                  backgroundColor: Colors.grey[300],
-                  color: Colors.blueAccent,
-                  minHeight: 6,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ],
+                ],
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Hình ảnh bài học
+                  Image.asset(
+                    lesson["image"],
+                    height: 50,
+                    width: 50,
+                    fit: BoxFit.contain,
+                  ),
+                  const SizedBox(height: 10),
+            
+                  // Tiêu đề bài học
+                  Text(
+                    lesson["title"],
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blueAccent,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+            
+                  // Thanh tiến trình
+                  LinearProgressIndicator(
+                    value: lesson["progress"],
+                    backgroundColor: Colors.grey[300],
+                    color: Colors.blueAccent,
+                    minHeight: 6,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ],
+              ),
             ),
           );
         },
