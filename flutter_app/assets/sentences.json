@@ -1,0 +1,1472 @@
+[
+    {
+        "id": 1,
+        "tags": "casual, informal",
+        "category": "Greetings",
+        "english_phrase": "Hello! How are you?",
+        "vietnamese_translation": "Xin chào! Bạn khỏe không?"
+    },
+    {
+        "id": 2,
+        "tags": "formal, meeting",
+        "category": "Greetings",
+        "english_phrase": "Hi, it’s nice to meet you!",
+        "vietnamese_translation": "Chào bạn, rất vui được gặp bạn!"
+    },
+    {
+        "id": 3,
+        "tags": "morning, daily",
+        "category": "Greetings",
+        "english_phrase": "Good morning, how’s your day going?",
+        "vietnamese_translation": "Chào buổi sáng, ngày của bạn thế nào?"
+    },
+    {
+        "id": 4,
+        "tags": "casual, informal",
+        "category": "Greetings",
+        "english_phrase": "Hey, what’s up?",
+        "vietnamese_translation": "Chào, có gì mới không?"
+    },
+    {
+        "id": 5,
+        "tags": "formal, polite",
+        "category": "Greetings",
+        "english_phrase": "How do you do?",
+        "vietnamese_translation": "Bạn có khỏe không?"
+    },
+    {
+        "id": 6,
+        "tags": "casual, reunion",
+        "category": "Greetings",
+        "english_phrase": "It’s great to see you!",
+        "vietnamese_translation": "Thật tuyệt khi được gặp bạn!"
+    },
+    {
+        "id": 7,
+        "tags": "casual, friendly",
+        "category": "Greetings",
+        "english_phrase": "What’s going on?",
+        "vietnamese_translation": "Có chuyện gì vậy?"
+    },
+    {
+        "id": 8,
+        "tags": "reunion, nostalgic",
+        "category": "Greetings",
+        "english_phrase": "Long time no see!",
+        "vietnamese_translation": "Lâu quá không gặp!"
+    },
+    {
+        "id": 9,
+        "tags": "casual, friendly",
+        "category": "Greetings",
+        "english_phrase": "How’s everything?",
+        "vietnamese_translation": "Mọi thứ thế nào rồi?"
+    },
+    {
+        "id": 10,
+        "tags": "casual, conversation",
+        "category": "Greetings",
+        "english_phrase": "Hi there! How have you been?",
+        "vietnamese_translation": "Chào bạn! Bạn dạo này thế nào?"
+    },
+    {
+        "id": 11,
+        "tags": "basic, greeting",
+        "category": "Self Introduction",
+        "english_phrase": "Hi, my name is John.",
+        "vietnamese_translation": "Chào, tôi tên là John."
+    },
+    {
+        "id": 12,
+        "tags": "location, greeting",
+        "category": "Self Introduction",
+        "english_phrase": "I’m from Hanoi.",
+        "vietnamese_translation": "Tôi đến từ Hà Nội."
+    },
+    {
+        "id": 13,
+        "tags": "age, personal",
+        "category": "Self Introduction",
+        "english_phrase": "I’m 25 years old.",
+        "vietnamese_translation": "Tôi 25 tuổi."
+    },
+    {
+        "id": 14,
+        "tags": "occupation, job",
+        "category": "Self Introduction",
+        "english_phrase": "I work as a teacher.",
+        "vietnamese_translation": "Tôi làm giáo viên."
+    },
+    {
+        "id": 15,
+        "tags": "hobbies, interests",
+        "category": "Self Introduction",
+        "english_phrase": "I love traveling and reading books.",
+        "vietnamese_translation": "Tôi thích du lịch và đọc sách."
+    },
+    {
+        "id": 16,
+        "tags": "education, university",
+        "category": "Self Introduction",
+        "english_phrase": "I am studying marketing at university.",
+        "vietnamese_translation": "Tôi đang học marketing ở trường đại học."
+    },
+    {
+        "id": 17,
+        "tags": "hobbies, cooking",
+        "category": "Self Introduction",
+        "english_phrase": "My favorite hobby is cooking.",
+        "vietnamese_translation": "Sở thích yêu thích của tôi là nấu ăn."
+    },
+    {
+        "id": 18,
+        "tags": "location, personal",
+        "category": "Self Introduction",
+        "english_phrase": "I come from a small town.",
+        "vietnamese_translation": "Tôi đến từ một thị trấn nhỏ."
+    },
+    {
+        "id": 19,
+        "tags": "occupation, career",
+        "category": "Self Introduction",
+        "english_phrase": "I’m currently working at a tech company.",
+        "vietnamese_translation": "Hiện tại tôi làm việc tại một công ty công nghệ."
+    },
+    {
+        "id": 20,
+        "tags": "learning, career",
+        "category": "Self Introduction",
+        "english_phrase": "I’m learning English to improve my career.",
+        "vietnamese_translation": "Tôi đang học tiếng Anh để cải thiện sự nghiệp."
+    },
+    {
+        "id": 21,
+        "tags": "question, family",
+        "category": "Family",
+        "english_phrase": "How many people are there in your family?",
+        "vietnamese_translation": "Gia đình bạn có bao nhiêu người?"
+    },
+    {
+        "id": 22,
+        "tags": "question, occupation",
+        "category": "Family",
+        "english_phrase": "What do your parents do?",
+        "vietnamese_translation": "Bố mẹ bạn làm nghề gì?"
+    },
+    {
+        "id": 23,
+        "tags": "question, siblings",
+        "category": "Family",
+        "english_phrase": "Do you have any siblings?",
+        "vietnamese_translation": "Bạn có anh chị em không?"
+    },
+    {
+        "id": 24,
+        "tags": "question, location",
+        "category": "Family",
+        "english_phrase": "Where are you from?",
+        "vietnamese_translation": "Bạn đến từ đâu?"
+    },
+    {
+        "id": 25,
+        "tags": "question, hometown",
+        "category": "Family",
+        "english_phrase": "Can you tell me about your hometown?",
+        "vietnamese_translation": "Bạn có thể kể về quê hương của mình không?"
+    },
+    {
+        "id": 26,
+        "tags": "question, weather",
+        "category": "Family",
+        "english_phrase": "What’s the weather like in your hometown?",
+        "vietnamese_translation": "Thời tiết ở quê bạn như thế nào?"
+    },
+    {
+        "id": 27,
+        "tags": "question, living",
+        "category": "Family",
+        "english_phrase": "Do you live with your family?",
+        "vietnamese_translation": "Bạn có sống cùng gia đình không?"
+    },
+    {
+        "id": 28,
+        "tags": "question, age",
+        "category": "Family",
+        "english_phrase": "How old are your siblings?",
+        "vietnamese_translation": "Anh chị em của bạn bao nhiêu tuổi?"
+    },
+    {
+        "id": 29,
+        "tags": "question, size",
+        "category": "Family",
+        "english_phrase": "Is your family big or small?",
+        "vietnamese_translation": "Gia đình bạn lớn hay nhỏ?"
+    },
+    {
+        "id": 30,
+        "tags": "question, childhood",
+        "category": "Family",
+        "english_phrase": "Where did you grow up?",
+        "vietnamese_translation": "Bạn đã lớn lên ở đâu?"
+    },
+    {
+        "id": 31,
+        "tags": "question, directions",
+        "category": "Travel",
+        "english_phrase": "Can you help me find my way to the station?",
+        "vietnamese_translation": "Bạn có thể giúp tôi tìm đường đến ga không?"
+    },
+    {
+        "id": 32,
+        "tags": "question, directions",
+        "category": "Travel",
+        "english_phrase": "Is it possible to walk to the beach from here?",
+        "vietnamese_translation": "Có thể đi bộ ra biển từ đây không?"
+    },
+    {
+        "id": 33,
+        "tags": "question, shopping",
+        "category": "Travel",
+        "english_phrase": "I’m looking for a souvenir shop. Can you help?",
+        "vietnamese_translation": "Tôi đang tìm cửa hàng quà lưu niệm. Bạn có thể giúp không?"
+    },
+    {
+        "id": 34,
+        "tags": "question, transportation",
+        "category": "Travel",
+        "english_phrase": "What time does the last train leave?",
+        "vietnamese_translation": "Chuyến tàu cuối cùng đi lúc mấy giờ?"
+    },
+    {
+        "id": 35,
+        "tags": "question, shopping",
+        "category": "Travel",
+        "english_phrase": "Where can I buy a SIM card for my phone?",
+        "vietnamese_translation": "Tôi có thể mua thẻ SIM cho điện thoại ở đâu?"
+    },
+    {
+        "id": 36,
+        "tags": "request, assistance",
+        "category": "Travel",
+        "english_phrase": "Could you take a picture of me, please?",
+        "vietnamese_translation": "Bạn có thể chụp cho tôi một bức ảnh được không?"
+    },
+    {
+        "id": 37,
+        "tags": "question, banking",
+        "category": "Travel",
+        "english_phrase": "How do I get to the nearest ATM?",
+        "vietnamese_translation": "Làm sao để đến máy ATM gần nhất?"
+    },
+    {
+        "id": 38,
+        "tags": "question, assistance",
+        "category": "Travel",
+        "english_phrase": "Is there a tourist information center nearby?",
+        "vietnamese_translation": "Có trung tâm thông tin du lịch gần đây không?"
+    },
+    {
+        "id": 39,
+        "tags": "question, shopping",
+        "category": "Travel",
+        "english_phrase": "Can I walk to the shopping mall from here?",
+        "vietnamese_translation": "Tôi có thể đi bộ đến trung tâm mua sắm từ đây không?"
+    },
+    {
+        "id": 40,
+        "tags": "emergency, assistance",
+        "category": "Travel",
+        "english_phrase": "I’ve lost my passport. What should I do?",
+        "vietnamese_translation": "Tôi đã mất hộ chiếu. Tôi nên làm gì?"
+    },
+    {
+        "id": 41,
+        "tags": "request, dining",
+        "category": "Restaurant",
+        "english_phrase": "Could I see the menu, please?",
+        "vietnamese_translation": "Tôi có thể xem thực đơn được không?"
+    },
+    {
+        "id": 42,
+        "tags": "request, reservation",
+        "category": "Restaurant",
+        "english_phrase": "I’d like to make a reservation for two.",
+        "vietnamese_translation": "Tôi muốn đặt bàn cho hai người."
+    },
+    {
+        "id": 43,
+        "tags": "question, dining",
+        "category": "Restaurant",
+        "english_phrase": "What do you recommend from the menu?",
+        "vietnamese_translation": "Bạn có gợi ý món nào từ thực đơn không?"
+    },
+    {
+        "id": 44,
+        "tags": "request, payment",
+        "category": "Restaurant",
+        "english_phrase": "Could you bring me the bill, please?",
+        "vietnamese_translation": "Bạn có thể mang hóa đơn cho tôi không?"
+    },
+    {
+        "id": 45,
+        "tags": "question, dietary",
+        "category": "Restaurant",
+        "english_phrase": "Is there a vegetarian option?",
+        "vietnamese_translation": "Có món ăn chay không?"
+    },
+    {
+        "id": 46,
+        "tags": "question, dining",
+        "category": "Restaurant",
+        "english_phrase": "How spicy is this dish?",
+        "vietnamese_translation": "Món này cay như thế nào?"
+    },
+    {
+        "id": 47,
+        "tags": "request, takeaway",
+        "category": "Restaurant",
+        "english_phrase": "Can I have this to go?",
+        "vietnamese_translation": "Tôi có thể mang món này đi không?"
+    },
+    {
+        "id": 48,
+        "tags": "question, dietary",
+        "category": "Restaurant",
+        "english_phrase": "Do you have any gluten-free dishes?",
+        "vietnamese_translation": "Bạn có món ăn không có gluten không?"
+    },
+    {
+        "id": 49,
+        "tags": "request, dining",
+        "category": "Restaurant",
+        "english_phrase": "Could I get some more water?",
+        "vietnamese_translation": "Tôi có thể lấy thêm nước không?"
+    },
+    {
+        "id": 50,
+        "tags": "question, payment",
+        "category": "Restaurant",
+        "english_phrase": "Is service charge included in the bill?",
+        "vietnamese_translation": "Phí dịch vụ có bao gồm trong hóa đơn không?"
+    },
+    {
+        "id": 51,
+        "tags": "reservation, check-in",
+        "category": "Hotel",
+        "english_phrase": "I have a reservation under the name Smith.",
+        "vietnamese_translation": "Tôi đã đặt phòng dưới tên Smith."
+    },
+    {
+        "id": 52,
+        "tags": "request, check-in",
+        "category": "Hotel",
+        "english_phrase": "Can I check in now?",
+        "vietnamese_translation": "Tôi có thể làm thủ tục nhận phòng ngay bây giờ không?"
+    },
+    {
+        "id": 53,
+        "tags": "question, pricing",
+        "category": "Hotel",
+        "english_phrase": "How much is the room per night?",
+        "vietnamese_translation": "Giá phòng mỗi đêm là bao nhiêu?"
+    },
+    {
+        "id": 54,
+        "tags": "question, amenities",
+        "category": "Hotel",
+        "english_phrase": "Do you offer free Wi-Fi?",
+        "vietnamese_translation": "Khách sạn có cung cấp Wi-Fi miễn phí không?"
+    },
+    {
+        "id": 55,
+        "tags": "question, check-out",
+        "category": "Hotel",
+        "english_phrase": "What time is check-out?",
+        "vietnamese_translation": "Giờ trả phòng là mấy giờ?"
+    },
+    {
+        "id": 56,
+        "tags": "request, assistance",
+        "category": "Hotel",
+        "english_phrase": "Can I get a wake-up call at 7 AM?",
+        "vietnamese_translation": "Tôi có thể nhận cuộc gọi đánh thức lúc 7 giờ sáng không?"
+    },
+    {
+        "id": 57,
+        "tags": "question, amenities",
+        "category": "Hotel",
+        "english_phrase": "Do you have a swimming pool?",
+        "vietnamese_translation": "Khách sạn có hồ bơi không?"
+    },
+    {
+        "id": 58,
+        "tags": "question, amenities",
+        "category": "Hotel",
+        "english_phrase": "Is breakfast included in the price?",
+        "vietnamese_translation": "Bữa sáng có bao gồm trong giá phòng không?"
+    },
+    {
+        "id": 59,
+        "tags": "question, dining",
+        "category": "Hotel",
+        "english_phrase": "Can you recommend a good local restaurant?",
+        "vietnamese_translation": "Bạn có thể giới thiệu một nhà hàng địa phương ngon không?"
+    },
+    {
+        "id": 60,
+        "tags": "request, extension",
+        "category": "Hotel",
+        "english_phrase": "I’d like to extend my stay for one more night.",
+        "vietnamese_translation": "Tôi muốn gia hạn thêm một đêm."
+    },
+    {
+        "id": 61,
+        "tags": "question, gate",
+        "category": "Airport",
+        "english_phrase": "What’s the gate number for my flight?",
+        "vietnamese_translation": "Cổng lên máy bay của tôi là số mấy?"
+    },
+    {
+        "id": 62,
+        "tags": "question, check-in",
+        "category": "Airport",
+        "english_phrase": "Is this the line for check-in?",
+        "vietnamese_translation": "Đây có phải là dòng xếp hàng để làm thủ tục không?"
+    },
+    {
+        "id": 63,
+        "tags": "question, baggage",
+        "category": "Airport",
+        "english_phrase": "Where is the baggage claim area?",
+        "vietnamese_translation": "Khu nhận hành lý ở đâu?"
+    },
+    {
+        "id": 64,
+        "tags": "question, transportation",
+        "category": "Airport",
+        "english_phrase": "Can I get a taxi from here?",
+        "vietnamese_translation": "Tôi có thể lấy taxi từ đây không?"
+    },
+    {
+        "id": 65,
+        "tags": "question, travel time",
+        "category": "Airport",
+        "english_phrase": "How long does it take to get to the city center from the airport?",
+        "vietnamese_translation": "Từ sân bay đến trung tâm thành phố mất bao lâu?"
+    },
+    {
+        "id": 66,
+        "tags": "question, seating",
+        "category": "Airport",
+        "english_phrase": "Can I have a window seat?",
+        "vietnamese_translation": "Tôi có thể ngồi gần cửa sổ không?"
+    },
+    {
+        "id": 67,
+        "tags": "question, timing",
+        "category": "Airport",
+        "english_phrase": "Is the flight on time?",
+        "vietnamese_translation": "Chuyến bay có đúng giờ không?"
+    },
+    {
+        "id": 68,
+        "tags": "question, missed flight",
+        "category": "Airport",
+        "english_phrase": "I missed my flight. What should I do?",
+        "vietnamese_translation": "Tôi đã lỡ chuyến bay. Tôi nên làm gì?"
+    },
+    {
+        "id": 69,
+        "tags": "question, shopping",
+        "category": "Airport",
+        "english_phrase": "Where can I find a duty-free shop?",
+        "vietnamese_translation": "Tôi có thể tìm cửa hàng miễn thuế ở đâu?"
+    },
+    {
+        "id": 70,
+        "tags": "question, boarding",
+        "category": "Airport",
+        "english_phrase": "Do I need to show ID to board the plane?",
+        "vietnamese_translation": "Tôi có cần xuất trình giấy tờ tùy thân để lên máy bay không?"
+    },
+    {
+        "id": 71,
+        "tags": "question, check-in",
+        "category": "Airport",
+        "english_phrase": "Where is the check-in counter for my airline?",
+        "vietnamese_translation": "Quầy làm thủ tục của hãng hàng không của tôi ở đâu?"
+    },
+    {
+        "id": 72,
+        "tags": "question, terminal",
+        "category": "Airport",
+        "english_phrase": "I’m flying to London. Which terminal should I go to?",
+        "vietnamese_translation": "Tôi bay đến London. Tôi nên đến nhà ga nào?"
+    },
+    {
+        "id": 73,
+        "tags": "question, baggage fee",
+        "category": "Airport",
+        "english_phrase": "How much is the baggage fee?",
+        "vietnamese_translation": "Phí hành lý là bao nhiêu?"
+    },
+    {
+        "id": 74,
+        "tags": "question, boarding",
+        "category": "Airport",
+        "english_phrase": "What time is boarding for my flight?",
+        "vietnamese_translation": "Lúc nào là giờ lên máy bay cho chuyến bay của tôi?"
+    },
+    {
+        "id": 75,
+        "tags": "question, flight change",
+        "category": "Airport",
+        "english_phrase": "Can I change my flight to a later time?",
+        "vietnamese_translation": "Tôi có thể thay đổi chuyến bay sang giờ muộn hơn không?"
+    },
+    {
+        "id": 76,
+        "tags": "question, currency exchange",
+        "category": "Airport",
+        "english_phrase": "Is there a currency exchange at the airport?",
+        "vietnamese_translation": "Sân bay có dịch vụ đổi tiền không?"
+    },
+    {
+        "id": 77,
+        "tags": "question, connecting flight",
+        "category": "Airport",
+        "english_phrase": "How do I get to my connecting flight?",
+        "vietnamese_translation": "Làm thế nào để tôi đến chuyến bay nối tiếp?"
+    },
+    {
+        "id": 78,
+        "tags": "question, delays",
+        "category": "Airport",
+        "english_phrase": "Are there any delays for the flight to New York?",
+        "vietnamese_translation": "Có sự chậm trễ nào cho chuyến bay đến New York không?"
+    },
+    {
+        "id": 79,
+        "tags": "question, upgrade",
+        "category": "Airport",
+        "english_phrase": "Can I upgrade my seat?",
+        "vietnamese_translation": "Tôi có thể nâng cấp chỗ ngồi không?"
+    },
+    {
+        "id": 80,
+        "tags": "question, COVID-19",
+        "category": "Airport",
+        "english_phrase": "Do you have any travel restrictions because of COVID-19?",
+        "vietnamese_translation": "Các bạn có hạn chế di chuyển nào do COVID-19 không?"
+    },
+    {
+        "id": 81,
+        "tags": "greeting, casual",
+        "category": "Friends",
+        "english_phrase": "Hey! Long time no see!",
+        "vietnamese_translation": "Chào bạn! Lâu rồi không gặp!"
+    },
+    {
+        "id": 82,
+        "tags": "greeting, casual",
+        "category": "Friends",
+        "english_phrase": "What’s up?",
+        "vietnamese_translation": "Có gì mới không?"
+    },
+    {
+        "id": 83,
+        "tags": "question, casual",
+        "category": "Friends",
+        "english_phrase": "How have you been?",
+        "vietnamese_translation": "Dạo này bạn thế nào?"
+    },
+    {
+        "id": 84,
+        "tags": "greeting, casual",
+        "category": "Friends",
+        "english_phrase": "It’s great to see you again!",
+        "vietnamese_translation": "Thật tuyệt khi gặp lại bạn!"
+    },
+    {
+        "id": 85,
+        "tags": "question, casual",
+        "category": "Friends",
+        "english_phrase": "How’s everything going?",
+        "vietnamese_translation": "Mọi chuyện thế nào rồi?"
+    },
+    {
+        "id": 86,
+        "tags": "question, casual",
+        "category": "Friends",
+        "english_phrase": "What have you been up to?",
+        "vietnamese_translation": "Dạo này bạn bận gì vậy?"
+    },
+    {
+        "id": 87,
+        "tags": "suggestion, casual",
+        "category": "Friends",
+        "english_phrase": "Let’s hang out sometime!",
+        "vietnamese_translation": "Chúng ta ra ngoài chơi một lúc nhé!"
+    },
+    {
+        "id": 88,
+        "tags": "greeting, casual",
+        "category": "Friends",
+        "english_phrase": "It’s been a while, hasn’t it?",
+        "vietnamese_translation": "Lâu rồi không gặp, phải không?"
+    },
+    {
+        "id": 89,
+        "tags": "suggestion, casual",
+        "category": "Friends",
+        "english_phrase": "We should catch up soon!",
+        "vietnamese_translation": "Chúng ta nên gặp nhau để nói chuyện một chút nhé!"
+    },
+    {
+        "id": 90,
+        "tags": "suggestion, casual",
+        "category": "Friends",
+        "english_phrase": "Do you want to grab a coffee sometime?",
+        "vietnamese_translation": "Bạn muốn đi uống cà phê lúc nào không?"
+    },
+    {
+        "id": 91,
+        "tags": "question, casual",
+        "category": "Friends",
+        "english_phrase": "How’s work going?",
+        "vietnamese_translation": "Công việc của bạn thế nào?"
+    },
+    {
+        "id": 92,
+        "tags": "question, casual",
+        "category": "Friends",
+        "english_phrase": "Have you seen that new movie?",
+        "vietnamese_translation": "Bạn đã xem bộ phim mới đó chưa?"
+    },
+    {
+        "id": 93,
+        "tags": "question, casual",
+        "category": "Friends",
+        "english_phrase": "What’s new with you?",
+        "vietnamese_translation": "Có gì mới với bạn không?"
+    },
+    {
+        "id": 94,
+        "tags": "suggestion, casual",
+        "category": "Friends",
+        "english_phrase": "Let’s meet up this weekend!",
+        "vietnamese_translation": "Cuối tuần này chúng ta gặp nhau nhé!"
+    },
+    {
+        "id": 95,
+        "tags": "question, family",
+        "category": "Friends",
+        "english_phrase": "How’s your family?",
+        "vietnamese_translation": "Gia đình bạn thế nào?"
+    },
+    {
+        "id": 96,
+        "tags": "question, casual",
+        "category": "Friends",
+        "english_phrase": "What’s your plan for today?",
+        "vietnamese_translation": "Kế hoạch hôm nay của bạn là gì?"
+    },
+    {
+        "id": 97,
+        "tags": "greeting, casual",
+        "category": "Friends",
+        "english_phrase": "I haven’t seen you in ages!",
+        "vietnamese_translation": "Lâu rồi không gặp bạn!"
+    },
+    {
+        "id": 98,
+        "tags": "greeting, casual",
+        "category": "Friends",
+        "english_phrase": "It’s so nice to catch up with you!",
+        "vietnamese_translation": "Thật vui khi được nói chuyện với bạn!"
+    },
+    {
+        "id": 99,
+        "tags": "suggestion, casual",
+        "category": "Friends",
+        "english_phrase": "Do you want to go for a walk?",
+        "vietnamese_translation": "Bạn có muốn đi dạo không?"
+    },
+    {
+        "id": 100,
+        "tags": "suggestion, casual",
+        "category": "Friends",
+        "english_phrase": "Let’s go out for dinner tonight!",
+        "vietnamese_translation": "Tối nay chúng ta ra ngoài ăn tối nhé!"
+    },
+    {
+        "id": 101,
+        "tags": "greeting, introduction",
+        "category": "Phone",
+        "english_phrase": "Hello, this is [Name].",
+        "vietnamese_translation": "Xin chào, tôi là [Tên]."
+    },
+    {
+        "id": 102,
+        "tags": "request, conversation",
+        "category": "Phone",
+        "english_phrase": "May I speak to [Name], please?",
+        "vietnamese_translation": "Tôi có thể nói chuyện với [Tên] được không?"
+    },
+    {
+        "id": 103,
+        "tags": "appointment, confirmation",
+        "category": "Phone",
+        "english_phrase": "I’m calling to confirm my appointment.",
+        "vietnamese_translation": "Tôi gọi để xác nhận cuộc hẹn."
+    },
+    {
+        "id": 104,
+        "tags": "request, waiting",
+        "category": "Phone",
+        "english_phrase": "Could you please hold for a moment?",
+        "vietnamese_translation": "Bạn có thể chờ một chút được không?"
+    },
+    {
+        "id": 105,
+        "tags": "call back, conversation",
+        "category": "Phone",
+        "english_phrase": "I’ll call you back later.",
+        "vietnamese_translation": "Tôi sẽ gọi lại cho bạn sau."
+    },
+    {
+        "id": 106,
+        "tags": "question, sound check",
+        "category": "Phone",
+        "english_phrase": "Can you hear me clearly?",
+        "vietnamese_translation": "Bạn có nghe rõ không?"
+    },
+    {
+        "id": 107,
+        "tags": "unavailable, message",
+        "category": "Phone",
+        "english_phrase": "I’m afraid he’s not available right now.",
+        "vietnamese_translation": "Xin lỗi, anh ấy hiện không có mặt."
+    },
+    {
+        "id": 108,
+        "tags": "message, conversation",
+        "category": "Phone",
+        "english_phrase": "I’ll leave a message for him.",
+        "vietnamese_translation": "Tôi sẽ để lại tin nhắn cho anh ấy."
+    },
+    {
+        "id": 109,
+        "tags": "request, clarification",
+        "category": "Phone",
+        "english_phrase": "Could you repeat that, please?",
+        "vietnamese_translation": "Bạn có thể lặp lại điều đó không?"
+    },
+    {
+        "id": 110,
+        "tags": "clarification, conversation",
+        "category": "Phone",
+        "english_phrase": "Sorry, I didn’t catch that.",
+        "vietnamese_translation": "Xin lỗi, tôi không nghe rõ."
+    },
+    {
+        "id": 111,
+        "tags": "job, inquiry",
+        "category": "Phone",
+        "english_phrase": "I’m calling regarding the job offer.",
+        "vietnamese_translation": "Tôi gọi về lời mời làm việc."
+    },
+    {
+        "id": 112,
+        "tags": "request, details",
+        "category": "Phone",
+        "english_phrase": "Could you please give me more details?",
+        "vietnamese_translation": "Bạn có thể cho tôi thêm chi tiết được không?"
+    },
+    {
+        "id": 113,
+        "tags": "follow-up, response",
+        "category": "Phone",
+        "english_phrase": "I’ll get back to you as soon as possible.",
+        "vietnamese_translation": "Tôi sẽ liên lạc lại với bạn càng sớm càng tốt."
+    },
+    {
+        "id": 114,
+        "tags": "request, update",
+        "category": "Phone",
+        "english_phrase": "Please let me know if anything changes.",
+        "vietnamese_translation": "Xin vui lòng cho tôi biết nếu có thay đổi."
+    },
+    {
+        "id": 115,
+        "tags": "voicemail, inquiry",
+        "category": "Phone",
+        "english_phrase": "Is there a voicemail I can leave?",
+        "vietnamese_translation": "Có hộp thư thoại mà tôi có thể để lại tin nhắn không?"
+    },
+    {
+        "id": 116,
+        "tags": "emergency, urgent",
+        "category": "Phone",
+        "english_phrase": "This is urgent, can you help me?",
+        "vietnamese_translation": "Đây là vấn đề khẩn cấp, bạn có thể giúp tôi không?"
+    },
+    {
+        "id": 117,
+        "tags": "call back, conversation",
+        "category": "Phone",
+        "english_phrase": "I’ll call you back in a few minutes.",
+        "vietnamese_translation": "Tôi sẽ gọi lại cho bạn trong vài phút nữa."
+    },
+    {
+        "id": 118,
+        "tags": "customer service, inquiry",
+        "category": "Phone",
+        "english_phrase": "Can I speak with someone in customer service?",
+        "vietnamese_translation": "Tôi có thể nói chuyện với ai đó ở bộ phận chăm sóc khách hàng không?"
+    },
+    {
+        "id": 119,
+        "tags": "request, waiting",
+        "category": "Phone",
+        "english_phrase": "Please hold on, I’ll check that for you.",
+        "vietnamese_translation": "Xin vui lòng chờ, tôi sẽ kiểm tra giúp bạn."
+    },
+    {
+        "id": 120,
+        "tags": "greeting, closing",
+        "category": "Phone",
+        "english_phrase": "Thanks for your time, have a great day!",
+        "vietnamese_translation": "Cảm ơn bạn vì đã dành thời gian, chúc bạn một ngày tốt lành!"
+    },
+    {
+        "id": 121,
+        "tags": "request, clarification",
+        "category": "School",
+        "english_phrase": "Can you explain this again, please?",
+        "vietnamese_translation": "Cô/thầy/bạn có thể giải thích lại điều này không?"
+    },
+    {
+        "id": 122,
+        "tags": "question, spelling",
+        "category": "School",
+        "english_phrase": "How do you spell that?",
+        "vietnamese_translation": "Cách viết chính tả từ đó thế nào?"
+    },
+    {
+        "id": 123,
+        "tags": "question, meaning",
+        "category": "School",
+        "english_phrase": "What does this word mean?",
+        "vietnamese_translation": "Từ này có nghĩa là gì?"
+    },
+    {
+        "id": 124,
+        "tags": "request, example",
+        "category": "School",
+        "english_phrase": "Could you give me an example?",
+        "vietnamese_translation": "Bạn có thể cho tôi một ví dụ được không?"
+    },
+    {
+        "id": 125,
+        "tags": "request, question",
+        "category": "School",
+        "english_phrase": "Can I ask a question?",
+        "vietnamese_translation": "Em có thể hỏi một câu được không?"
+    },
+    {
+        "id": 126,
+        "tags": "question, homework",
+        "category": "School",
+        "english_phrase": "What’s the homework for tonight?",
+        "vietnamese_translation": "Bài tập về nhà tối nay là gì?"
+    },
+    {
+        "id": 127,
+        "tags": "request, permission",
+        "category": "School",
+        "english_phrase": "Can I go to the bathroom?",
+        "vietnamese_translation": "Em có thể đi vệ sinh không?"
+    },
+    {
+        "id": 128,
+        "tags": "question, schedule",
+        "category": "School",
+        "english_phrase": "When is the test?",
+        "vietnamese_translation": "Kỳ thi khi nào?"
+    },
+    {
+        "id": 129,
+        "tags": "question, quiz",
+        "category": "School",
+        "english_phrase": "Do we have a quiz today?",
+        "vietnamese_translation": "Hôm nay chúng ta có kiểm tra không?"
+    },
+    {
+        "id": 130,
+        "tags": "request, instructions",
+        "category": "School",
+        "english_phrase": "Could you repeat the instructions?",
+        "vietnamese_translation": "Cô/thầy có thể hướng dẫn lại không?"
+    },
+    {
+        "id": 131,
+        "tags": "answer, guidance",
+        "category": "School",
+        "english_phrase": "The answer is on the board.",
+        "vietnamese_translation": "Câu trả lời có trên bảng."
+    },
+    {
+        "id": 132,
+        "tags": "guidance, reference",
+        "category": "School",
+        "english_phrase": "You can find this in your textbook.",
+        "vietnamese_translation": "Bạn có thể tìm thấy điều này trong sách giáo khoa."
+    },
+    {
+        "id": 133,
+        "tags": "homework, reference",
+        "category": "School",
+        "english_phrase": "The homework is to read chapter 5.",
+        "vietnamese_translation": "Bài tập về nhà là đọc chương 5."
+    },
+    {
+        "id": 134,
+        "tags": "announcement, schedule",
+        "category": "School",
+        "english_phrase": "The test will be next Monday.",
+        "vietnamese_translation": "Kỳ thi sẽ vào thứ Hai tuần tới."
+    },
+    {
+        "id": 135,
+        "tags": "announcement, quiz",
+        "category": "School",
+        "english_phrase": "Yes, we have a quiz on Friday.",
+        "vietnamese_translation": "Vâng, chúng ta có kiểm tra vào thứ Sáu."
+    },
+    {
+        "id": 136,
+        "tags": "answer, multiple choice",
+        "category": "School",
+        "english_phrase": "The answer is B.",
+        "vietnamese_translation": "Câu trả lời là B."
+    },
+    {
+        "id": 137,
+        "tags": "offer, assistance",
+        "category": "School",
+        "english_phrase": "Let me check the answer for you.",
+        "vietnamese_translation": "Để tôi kiểm tra câu trả lời cho bạn."
+    },
+    {
+        "id": 138,
+        "tags": "reference, textbook",
+        "category": "School",
+        "english_phrase": "It’s on page 45.",
+        "vietnamese_translation": "Nó ở trang 45."
+    },
+    {
+        "id": 139,
+        "tags": "guidance, grammar",
+        "category": "School",
+        "english_phrase": "You need to study the grammar from Unit 4.",
+        "vietnamese_translation": "Bạn cần ôn lại ngữ pháp trong bài 4."
+    },
+    {
+        "id": 140,
+        "tags": "encouragement, response",
+        "category": "School",
+        "english_phrase": "That’s a good question!",
+        "vietnamese_translation": "Đó là một câu hỏi hay!"
+    },
+    {
+        "id": 141,
+        "tags": "urgent, help",
+        "category": "Emergency",
+        "english_phrase": "I need help immediately!",
+        "vietnamese_translation": "Tôi cần giúp đỡ ngay lập tức!"
+    },
+    {
+        "id": 142,
+        "tags": "urgent, medical",
+        "category": "Emergency",
+        "english_phrase": "Call an ambulance!",
+        "vietnamese_translation": "Gọi xe cứu thương!"
+    },
+    {
+        "id": 143,
+        "tags": "urgent, robbery",
+        "category": "Emergency",
+        "english_phrase": "I’ve been robbed!",
+        "vietnamese_translation": "Tôi bị cướp mất rồi!"
+    },
+    {
+        "id": 144,
+        "tags": "urgent, accident",
+        "category": "Emergency",
+        "english_phrase": "There’s been an accident.",
+        "vietnamese_translation": "Có một vụ tai nạn."
+    },
+    {
+        "id": 145,
+        "tags": "question, hospital",
+        "category": "Emergency",
+        "english_phrase": "Where’s the nearest hospital?",
+        "vietnamese_translation": "Bệnh viện gần nhất ở đâu?"
+    },
+    {
+        "id": 146,
+        "tags": "urgent, lost",
+        "category": "Emergency",
+        "english_phrase": "Please help, I’m lost!",
+        "vietnamese_translation": "Làm ơn giúp tôi, tôi bị lạc!"
+    },
+    {
+        "id": 147,
+        "tags": "problem, phone",
+        "category": "Emergency",
+        "english_phrase": "My phone’s not working.",
+        "vietnamese_translation": "Điện thoại của tôi không hoạt động."
+    },
+    {
+        "id": 148,
+        "tags": "urgent, embassy",
+        "category": "Emergency",
+        "english_phrase": "I need to contact my embassy.",
+        "vietnamese_translation": "Tôi cần liên lạc với đại sứ quán."
+    },
+    {
+        "id": 149,
+        "tags": "safety, fire exit",
+        "category": "Emergency",
+        "english_phrase": "Is there a fire exit here?",
+        "vietnamese_translation": "Có lối thoát hiểm ở đây không?"
+    },
+    {
+        "id": 150,
+        "tags": "urgent, police",
+        "category": "Emergency",
+        "english_phrase": "I need to file a police report.",
+        "vietnamese_translation": "Tôi cần làm báo cáo với cảnh sát."
+    },
+    {
+        "id": 151,
+        "tags": "medical, allergy",
+        "category": "Emergency",
+        "english_phrase": "I’m allergic to [substance].",
+        "vietnamese_translation": "Tôi bị dị ứng với [chất liệu]."
+    },
+    {
+        "id": 152,
+        "tags": "urgent, police",
+        "category": "Emergency",
+        "english_phrase": "Please call the police.",
+        "vietnamese_translation": "Làm ơn gọi cảnh sát giúp tôi."
+    },
+    {
+        "id": 153,
+        "tags": "lost, wallet",
+        "category": "Emergency",
+        "english_phrase": "I’ve lost my wallet.",
+        "vietnamese_translation": "Tôi đã mất ví."
+    },
+    {
+        "id": 154,
+        "tags": "lost, passport",
+        "category": "Emergency",
+        "english_phrase": "Can you help me find my passport?",
+        "vietnamese_translation": "Bạn có thể giúp tôi tìm hộ chiếu không?"
+    },
+    {
+        "id": 155,
+        "tags": "urgent, fire",
+        "category": "Emergency",
+        "english_phrase": "There’s a fire!",
+        "vietnamese_translation": "Có cháy rồi!"
+    },
+    {
+        "id": 156,
+        "tags": "medical, sick",
+        "category": "Emergency",
+        "english_phrase": "Someone is sick and needs urgent care.",
+        "vietnamese_translation": "Có người bị ốm và cần sự giúp đỡ khẩn cấp."
+    },
+    {
+        "id": 157,
+        "tags": "medical, doctor",
+        "category": "Emergency",
+        "english_phrase": "I need a doctor right away!",
+        "vietnamese_translation": "Tôi cần gặp bác sĩ ngay lập tức!"
+    },
+    {
+        "id": 158,
+        "tags": "problem, car",
+        "category": "Emergency",
+        "english_phrase": "My car has broken down.",
+        "vietnamese_translation": "Xe của tôi bị hỏng."
+    },
+    {
+        "id": 159,
+        "tags": "urgent, locked",
+        "category": "Emergency",
+        "english_phrase": "The door is locked, and I’m inside.",
+        "vietnamese_translation": "Cửa bị khóa, tôi đang ở trong."
+    },
+    {
+        "id": 160,
+        "tags": "request, contact",
+        "category": "Emergency",
+        "english_phrase": "Can you please help me contact someone?",
+        "vietnamese_translation": "Bạn có thể giúp tôi liên lạc với ai đó không?"
+    },
+    {
+        "id": 161,
+        "tags": "request, doctor",
+        "category": "Hospital",
+        "english_phrase": "I need to see a doctor, please.",
+        "vietnamese_translation": "Tôi cần gặp bác sĩ, làm ơn."
+    },
+    {
+        "id": 162,
+        "tags": "health, condition",
+        "category": "Hospital",
+        "english_phrase": "I’m not feeling well.",
+        "vietnamese_translation": "Tôi cảm thấy không khỏe."
+    },
+    {
+        "id": 163,
+        "tags": "emergency, directions",
+        "category": "Hospital",
+        "english_phrase": "Can you tell me where the emergency room is?",
+        "vietnamese_translation": "Bạn có thể chỉ cho tôi biết phòng cấp cứu ở đâu không?"
+    },
+    {
+        "id": 164,
+        "tags": "symptom, health",
+        "category": "Hospital",
+        "english_phrase": "I have a headache.",
+        "vietnamese_translation": "Tôi bị đau đầu."
+    },
+    {
+        "id": 165,
+        "tags": "question, waiting time",
+        "category": "Hospital",
+        "english_phrase": "How long will the wait be?",
+        "vietnamese_translation": "Mất bao lâu để đợi đến lượt?"
+    },
+    {
+        "id": 166,
+        "tags": "question, diagnosis",
+        "category": "Hospital",
+        "english_phrase": "What seems to be the problem?",
+        "vietnamese_translation": "Vấn đề có vẻ như thế nào?"
+    },
+    {
+        "id": 167,
+        "tags": "request, medication",
+        "category": "Hospital",
+        "english_phrase": "I need a prescription for medicine.",
+        "vietnamese_translation": "Tôi cần một đơn thuốc."
+    },
+    {
+        "id": 168,
+        "tags": "question, medication",
+        "category": "Hospital",
+        "english_phrase": "Are there any side effects from this medication?",
+        "vietnamese_translation": "Có tác dụng phụ nào từ thuốc này không?"
+    },
+    {
+        "id": 169,
+        "tags": "symptom, health",
+        "category": "Hospital",
+        "english_phrase": "I’ve been feeling nauseous.",
+        "vietnamese_translation": "Tôi cảm thấy buồn nôn."
+    },
+    {
+        "id": 170,
+        "tags": "request, check-up",
+        "category": "Hospital",
+        "english_phrase": "Can you check my blood pressure?",
+        "vietnamese_translation": "Bạn có thể kiểm tra huyết áp của tôi không?"
+    },
+    {
+        "id": 171,
+        "tags": "question, results",
+        "category": "Hospital",
+        "english_phrase": "Where can I get my test results?",
+        "vietnamese_translation": "Tôi có thể lấy kết quả xét nghiệm ở đâu?"
+    },
+    {
+        "id": 172,
+        "tags": "request, appointment",
+        "category": "Hospital",
+        "english_phrase": "I need to make an appointment.",
+        "vietnamese_translation": "Tôi cần đặt lịch hẹn."
+    },
+    {
+        "id": 173,
+        "tags": "question, pricing",
+        "category": "Hospital",
+        "english_phrase": "How much is the consultation fee?",
+        "vietnamese_translation": "Phí tư vấn là bao nhiêu?"
+    },
+    {
+        "id": 174,
+        "tags": "health, allergy",
+        "category": "Hospital",
+        "english_phrase": "I’m allergic to certain medications.",
+        "vietnamese_translation": "Tôi bị dị ứng với một số loại thuốc."
+    },
+    {
+        "id": 175,
+        "tags": "request, paperwork",
+        "category": "Hospital",
+        "english_phrase": "Can you help me fill out this form?",
+        "vietnamese_translation": "Bạn có thể giúp tôi điền mẫu đơn này không?"
+    },
+    {
+        "id": 176,
+        "tags": "request, specialist",
+        "category": "Hospital",
+        "english_phrase": "I need to see a specialist.",
+        "vietnamese_translation": "Tôi cần gặp bác sĩ chuyên khoa."
+    },
+    {
+        "id": 177,
+        "tags": "request, medication",
+        "category": "Hospital",
+        "english_phrase": "Can you give me some pain relief?",
+        "vietnamese_translation": "Bạn có thể cho tôi thuốc giảm đau không?"
+    },
+    {
+        "id": 178,
+        "tags": "question, hospital stay",
+        "category": "Hospital",
+        "english_phrase": "Do I need to stay in the hospital overnight?",
+        "vietnamese_translation": "Tôi có cần phải ở lại bệnh viện qua đêm không?"
+    },
+    {
+        "id": 179,
+        "tags": "question, follow-up",
+        "category": "Hospital",
+        "english_phrase": "Are there any follow-up appointments I need to schedule?",
+        "vietnamese_translation": "Tôi có cần phải đặt lịch hẹn tái khám không?"
+    },
+    {
+        "id": 180,
+        "tags": "thank you, recovery",
+        "category": "Hospital",
+        "english_phrase": "I’m feeling much better now, thank you.",
+        "vietnamese_translation": "Bây giờ tôi cảm thấy tốt hơn nhiều, cảm ơn bạn."
+    },
+    {
+        "id": 181,
+        "tags": "encouragement, praise",
+        "category": "Compliment",
+        "english_phrase": "You did an amazing job!",
+        "vietnamese_translation": "Bạn đã làm rất tốt!"
+    },
+    {
+        "id": 182,
+        "tags": "encouragement, idea",
+        "category": "Compliment",
+        "english_phrase": "That’s a great idea!",
+        "vietnamese_translation": "Đó là một ý tưởng tuyệt vời!"
+    },
+    {
+        "id": 183,
+        "tags": "praise, admiration",
+        "category": "Compliment",
+        "english_phrase": "I really admire your work.",
+        "vietnamese_translation": "Tôi thực sự ngưỡng mộ công việc của bạn."
+    },
+    {
+        "id": 184,
+        "tags": "appearance, praise",
+        "category": "Compliment",
+        "english_phrase": "You look fantastic today!",
+        "vietnamese_translation": "Bạn trông thật tuyệt hôm nay!"
+    },
+    {
+        "id": 185,
+        "tags": "work, praise",
+        "category": "Compliment",
+        "english_phrase": "Your presentation was excellent.",
+        "vietnamese_translation": "Bài thuyết trình của bạn thật xuất sắc."
+    },
+    {
+        "id": 186,
+        "tags": "praise, thoughts",
+        "category": "Compliment",
+        "english_phrase": "I love the way you think!",
+        "vietnamese_translation": "Tôi rất thích cách bạn suy nghĩ!"
+    },
+    {
+        "id": 187,
+        "tags": "praise, humor",
+        "category": "Compliment",
+        "english_phrase": "You have a great sense of humor.",
+        "vietnamese_translation": "Bạn có khiếu hài hước rất tốt."
+    },
+    {
+        "id": 188,
+        "tags": "praise, location",
+        "category": "Compliment",
+        "english_phrase": "This place looks amazing!",
+        "vietnamese_translation": "Nơi này trông thật tuyệt vời!"
+    },
+    {
+        "id": 189,
+        "tags": "praise, talent",
+        "category": "Compliment",
+        "english_phrase": "You’re such a talented person.",
+        "vietnamese_translation": "Bạn là một người rất tài năng."
+    },
+    {
+        "id": 190,
+        "tags": "admiration, skills",
+        "category": "Compliment",
+        "english_phrase": "I’m really impressed by your skills.",
+        "vietnamese_translation": "Tôi thực sự ấn tượng với kỹ năng của bạn."
+    },
+    {
+        "id": 191,
+        "tags": "suggestion, rest",
+        "category": "Advice",
+        "english_phrase": "I think you should take a break.",
+        "vietnamese_translation": "Tôi nghĩ bạn nên nghỉ ngơi một chút."
+    },
+    {
+        "id": 192,
+        "tags": "suggestion, approach",
+        "category": "Advice",
+        "english_phrase": "Maybe you could try a different approach.",
+        "vietnamese_translation": "Có thể bạn nên thử một cách tiếp cận khác."
+    },
+    {
+        "id": 193,
+        "tags": "suggestion, work",
+        "category": "Advice",
+        "english_phrase": "I recommend you talk to your supervisor.",
+        "vietnamese_translation": "Tôi khuyên bạn nên nói chuyện với người giám sát của mình."
+    },
+    {
+        "id": 194,
+        "tags": "suggestion, rest",
+        "category": "Advice",
+        "english_phrase": "You might want to get some more rest.",
+        "vietnamese_translation": "Bạn có thể muốn nghỉ ngơi thêm một chút."
+    },
+    {
+        "id": 195,
+        "tags": "suggestion, planning",
+        "category": "Advice",
+        "english_phrase": "It would be a good idea to plan ahead.",
+        "vietnamese_translation": "Lên kế hoạch trước là một ý tưởng tốt."
+    },
+    {
+        "id": 196,
+        "tags": "question, guidance",
+        "category": "Advice",
+        "english_phrase": "Have you considered getting some advice?",
+        "vietnamese_translation": "Bạn đã cân nhắc nhận lời khuyên chưa?"
+    },
+    {
+        "id": 197,
+        "tags": "suggestion, calm",
+        "category": "Advice",
+        "english_phrase": "You should try to stay calm.",
+        "vietnamese_translation": "Bạn nên cố gắng giữ bình tĩnh."
+    },
+    {
+        "id": 198,
+        "tags": "suggestion, assistance",
+        "category": "Advice",
+        "english_phrase": "Maybe you should ask for help.",
+        "vietnamese_translation": "Có thể bạn nên nhờ sự giúp đỡ."
+    },
+    {
+        "id": 199,
+        "tags": "suggestion, focus",
+        "category": "Advice",
+        "english_phrase": "It’s a good idea to focus on one task at a time.",
+        "vietnamese_translation": "Tốt nhất là bạn nên tập trung vào một công việc tại một thời điểm."
+    },
+    {
+        "id": 200,
+        "tags": "suggestion, expert",
+        "category": "Advice",
+        "english_phrase": "Why not try talking to a professional?",
+        "vietnamese_translation": "Tại sao không thử nói chuyện với một chuyên gia?"
+    },
+    {
+        "id": 201,
+        "tags": "offer, assistance",
+        "category": "Offering Help",
+        "english_phrase": "Can I help you with that?",
+        "vietnamese_translation": "Tôi có thể giúp bạn việc đó không?"
+    },
+    {
+        "id": 202,
+        "tags": "question, assistance",
+        "category": "Offering Help",
+        "english_phrase": "Do you need any assistance?",
+        "vietnamese_translation": "Bạn có cần sự giúp đỡ nào không?"
+    },
+    {
+        "id": 203,
+        "tags": "offer, help",
+        "category": "Offering Help",
+        "english_phrase": "Let me know if you need anything.",
+        "vietnamese_translation": "Hãy cho tôi biết nếu bạn cần gì."
+    },
+    {
+        "id": 204,
+        "tags": "offer, assistance",
+        "category": "Offering Help",
+        "english_phrase": "I’d be happy to help you out.",
+        "vietnamese_translation": "Tôi rất vui khi có thể giúp bạn."
+    },
+    {
+        "id": 205,
+        "tags": "offer, help",
+        "category": "Offering Help",
+        "english_phrase": "Would you like me to give you a hand?",
+        "vietnamese_translation": "Bạn có muốn tôi giúp đỡ không?"
+    },
+    {
+        "id": 206,
+        "tags": "offer, assistance",
+        "category": "Offering Help",
+        "english_phrase": "Can I lend you a hand with that?",
+        "vietnamese_translation": "Tôi có thể cho bạn một tay không?"
+    },
+    {
+        "id": 207,
+        "tags": "encouragement, help",
+        "category": "Offering Help",
+        "english_phrase": "Please don’t hesitate to ask if you need anything.",
+        "vietnamese_translation": "Xin đừng ngần ngại hỏi nếu bạn cần gì."
+    },
+    {
+        "id": 208,
+        "tags": "offer, assistance",
+        "category": "Offering Help",
+        "english_phrase": "I’m happy to assist you.",
+        "vietnamese_translation": "Tôi rất vui khi được hỗ trợ bạn."
+    },
+    {
+        "id": 209,
+        "tags": "offer, help",
+        "category": "Offering Help",
+        "english_phrase": "If you need any help, just let me know.",
+        "vietnamese_translation": "Nếu bạn cần giúp đỡ, chỉ cần cho tôi biết."
+    },
+    {
+        "id": 210,
+        "tags": "offer, assistance",
+        "category": "Offering Help",
+        "english_phrase": "I can help you carry that.",
+        "vietnamese_translation": "Tôi có thể giúp bạn mang cái đó."
+    }
+]

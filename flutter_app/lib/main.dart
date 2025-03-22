@@ -1,18 +1,27 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/category_screen.dart';
+import 'package:flutter_app/pages/conversation_screen.dart';
+import 'package:flutter_app/pages/exercise_screen.dart';
+import 'package:flutter_app/pages/grammar_screen.dart';
 import 'package:flutter_app/pages/register_screen.dart';
+import 'package:flutter_app/pages/tense_list_screen.dart';
 import 'package:flutter_app/pages/vocab_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_app/providers/setting_provider.dart';
 import 'package:flutter_app/pages/home_screen.dart';
 import 'package:flutter_app/pages/login_screen.dart';
+import 'package:flutter_app/services/data_loader.dart'; // Import hàm load dữ liệu
 import 'firebase_options.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  // Gọi hàm loadAndInsertQuestions() nếu bạn muốn seed dữ liệu vào DB khi khởi động
+  await loadAndInsertQuestions();
+
   runApp(
     ChangeNotifierProvider(
       create: (context) => SettingsProvider(),
@@ -39,6 +48,11 @@ class MyApp extends StatelessWidget {
         '/home': (context) => const HomeScreen(),
         '/register': (context) => const RegisterScreen(),
         '/vocab': (context) => const VocabScreen(),
+        '/category': (context) => CategoryScreen(),
+        '/conversation': (context) => ConversationScreen(category: ''),
+        '/tense_list': (context) => TenseListScreen(),
+        '/grammar': (context) => GrammarScreen(tense: {}),  // Chú ý: Cần truyền dữ liệu tense đúng
+        '/exercise': (context) => ExerciseScreen(tense: {}), // Chú ý: Cần truyền dữ liệu tense đúng
       },
     );
   }

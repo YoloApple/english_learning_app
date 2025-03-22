@@ -1,0 +1,155 @@
+{
+  "tenses": [
+    {
+      "id": "1.1.1",
+      "name": "Thì hiện tại đơn",
+      "description": "Diễn tả một thói quen hay hành động được lặp đi lặp lại, một sự thật hiển nhiên, hành động có kế hoạch trước và sẽ xảy ra trong tương lai, hoặc khả năng, năng lực của một người. Cũng được dùng trong mệnh đề điều kiện loại 1.",
+      "structure": {
+        "affirmative": "S + V(s/es) + O / S + am/are/is + N/Adj",
+        "negative": "S + do/does + not + V + O / S + am/are/is + not + N/Adj",
+        "interrogative": "Do/Does + S + V + O? / Am/Are/Is + S + N/Adj?"
+      },
+      "examples": [
+        "Henry does not study hard.",
+        "Do you usually play badminton?"
+      ]
+    },
+    {
+      "id": "1.1.2",
+      "name": "Thì hiện tại tiếp diễn",
+      "description": "Diễn tả hành động đang xảy ra tại thời điểm nói, hành động đã được lập kế hoạch và sắp xảy ra, hành động lặp đi lặp lại gây khó chịu, hay sự thay đổi theo chiều hướng phát triển.",
+      "structure": {
+        "affirmative": "S + am/are/is + Ving + O",
+        "negative": "S + am/are/is + not + Ving + O",
+        "interrogative": "Am/Are/Is + S + Ving + O?"
+      },
+      "examples": [
+        "Is Jane watching a movie?",
+        "My mother is not wearing a coat."
+      ]
+    },
+    {
+      "id": "1.3.1",
+      "name": "Thì tương lai đơn",
+      "description": "Diễn tả các kế hoạch được quyết định ngay lúc nói, đưa ra lời đề nghị, yêu cầu, lời hứa hoặc dự đoán không chắc chắn.",
+      "usage": [
+        "Diễn tả các kế hoạch được quyết định ngay vào thời điểm nói.",
+        "Đưa ra các lời đề nghị, yêu cầu, lời hứa.",
+        "Diễn đạt một dự đoán không chắc chắn hoặc không có căn cứ.",
+        "Đưa ra lời đe dọa hoặc cảnh báo."
+      ],
+      "structure": {
+        "affirmative": "S + will/shall + V + O",
+        "negative": "S + will/shall + not + V + O",
+        "interrogative": "Will/shall + S + V + O?"
+      },
+      "examples": [
+        {
+          "sentence": "Jane promises she will visit her grandmother next month.",
+          "translation": "Jane hứa rằng cô ấy sẽ đến thăm bà vào tháng sau."
+        },
+        {
+          "sentence": "Will you clean the room?",
+          "translation": "Bạn sẽ dọn phòng chứ?"
+        }
+      ]
+    },
+    {
+      "id": "1.3.2",
+      "name": "Thì tương lai gần",
+      "description": "Diễn tả hành động sắp xảy ra trong tương lai gần, dự đoán có căn cứ hoặc dự định từ quá khứ chưa thực hiện.",
+      "usage": [
+        "Diễn tả một hành động nào đó sắp xảy ra ở tương lai gần.",
+        "Diễn tả dự đoán của người nói (có dự tính từ trước hoặc khả năng xảy ra cao).",
+        "Diễn tả một dự định từ trong quá khứ vẫn chưa được thực hiện."
+      ],
+      "structure": {
+        "affirmative": "S + be + going to + V + O",
+        "negative": "S + be + not + going to + V + O",
+        "interrogative": "Be + S + going to + V + O?"
+      },
+      "examples": [
+        {
+          "sentence": "Tomorrow we are going to visit my friends in Da Nang. We have just bought the ticket.",
+          "translation": "Ngày mai chúng mình sẽ đi thăm các bạn ở Đà Nẵng. Chúng mình vừa mới mua vé rồi."
+        },
+        {
+          "sentence": "Henry is going to walk to school if his father cannot repair his bike.",
+          "translation": "Henry sẽ đi bộ đến trường nếu bố cậu ấy không thể sửa xe đạp cho cậu ấy."
+        }
+      ]
+    },
+    {
+      "id": "1.3.3",
+      "name": "Thì tương lai tiếp diễn",
+      "description": "Diễn tả hành động sẽ xảy ra hoặc đang xảy ra tại một thời điểm cụ thể trong tương lai.",
+      "usage": [
+        "Diễn tả một hành động sẽ xảy ra tại một thời điểm cụ thể trong tương lai.",
+        "Diễn tả một hành động đang diễn ra tại một thời điểm xác định trong tương lai."
+      ],
+      "structure": {
+        "affirmative": "S + will + be + Ving + O",
+        "negative": "S + will + not + be + Ving + O",
+        "interrogative": "Will + S + be + Ving + O?"
+      },
+      "examples": [
+        {
+          "sentence": "Henry will be waiting at school at 5 PM tomorrow.",
+          "translation": "Henry sẽ đang chờ ở trường vào 5 giờ chiều mai."
+        },
+        {
+          "sentence": "We won’t be having dinner at home when the film starts.",
+          "translation": "Chúng tôi sẽ không ăn tối ở nhà khi bộ phim bắt đầu chiếu."
+        }
+      ]
+    },
+    {
+      "id": "1.3.4",
+      "name": "Thì tương lai hoàn thành",
+      "description": "Diễn tả hành động hay sự việc sẽ hoàn thành trước một thời điểm xác định hoặc trước một hành động, sự việc khác trong tương lai.",
+      "usage": [
+        "Diễn tả một hành động hay sự việc sẽ hoàn thành trước 1 thời điểm nào đó trong tương lai.",
+        "Diễn tả một hành động hay sự việc sẽ được hoàn thành trước một hành động, sự việc khác trong tương lai."
+      ],
+      "structure": {
+        "affirmative": "S + will + have + Ved/II + O",
+        "negative": "S + will + not + have + Ved/II + O",
+        "interrogative": "Will + S + have + Ved/II + O?"
+      },
+      "examples": [
+        {
+          "sentence": "She won’t have cooked lunch for at least another hour.",
+          "translation": "Cô ấy sẽ vẫn chưa nấu bữa trưa cho tới ít nhất là 1 tiếng nữa."
+        },
+        {
+          "sentence": "Will Henry have graduated by the end of next month?",
+          "translation": "Cho tới cuối tháng thì Henry sẽ tốt nghiệp đúng không?"
+        }
+      ]
+    },
+    {
+      "id": "1.3.5",
+      "name": "Thì tương lai hoàn thành tiếp diễn",
+      "description": "Nhấn mạnh tính liên tục của một hành động hoặc sự việc, diễn tả hành động kéo dài cho đến một thời điểm xác định trong tương lai.",
+      "usage": [
+        "Nhấn mạnh tính liên tục của một hành động hoặc sự việc so với hành động, sự việc khác xảy ra ở tương lai.",
+        "Diễn tả một hành động, sự việc nào đó xảy ra và kéo dài liên tục đến một thời điểm cụ thể trong tương lai."
+      ],
+      "structure": {
+        "affirmative": "S + will + have + been + Ving + O",
+        "negative": "S + will + not + have + been + Ving + O",
+        "interrogative": "Will + S + have + been + Ving + O?"
+      },
+      "examples": [
+        {
+          "sentence": "I will have been waiting for Jane for three hours by six o’clock.",
+          "translation": "Mình sẽ đợi Jane trong 3 tiếng cho đến 6 giờ."
+        },
+        {
+          "sentence": "Will you have been playing guitar for 2 years by August 14th?",
+          "translation": "Có phải bạn sẽ chơi ghi-ta được 2 năm vào ngày 14 tháng 8 không?"
+        }
+      ]
+    }
+  ]
+}

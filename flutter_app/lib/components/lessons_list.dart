@@ -37,6 +37,11 @@ class LessonsList extends StatelessWidget {
               if (lesson["title"]=="Basic English"){
                 Navigator.pushReplacementNamed(context, '/vocab');
               }
+              else if(lesson["title"]=="Conversation Skills"){
+                Navigator.pushReplacementNamed(context, '/category');
+              }else if(lesson["title"]=="Advanced Grammar"){
+                Navigator.pushReplacementNamed(context, '/tense_list');
+              }
             },
             child: Container(
               width: 180, // Độ rộng của từng mục bài học

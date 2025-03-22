@@ -1,0 +1,274 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "exerciseType": "Thì hiện tại đơn",
+      "questionText": "She usually _____ for a walk in the evening. (go)",
+      "correctAnswer": "goes",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 2,
+      "exerciseType": "Thì hiện tại đơn",
+      "questionText": "My mother _____ delicious meals every Sunday. (cook)",
+      "correctAnswer": "cooks",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 3,
+      "exerciseType": "Thì hiện tại đơn",
+      "questionText": "They _____ their favorite TV show at 8 PM tonight. (watch)",
+      "correctAnswer": "watch",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 4,
+      "exerciseType": "Thì hiện tại đơn",
+      "questionText": "He _____ soccer with his friends on Saturdays. (play)",
+      "correctAnswer": "plays",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 5,
+      "exerciseType": "Thì hiện tại đơn",
+      "questionText": "The train to London _____ at 9:15 AM every morning. (depart)",
+      "correctAnswer": "departs",
+      "type": "fill_in_blank",
+      "options": []
+    },
+
+    {
+      "id": 6,
+      "exerciseType": "Thì hiện tại tiếp diễn",
+      "questionText": "Right now, she _____ a book in her room. (read)",
+      "correctAnswer": "is reading",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 7,
+      "exerciseType": "Thì hiện tại tiếp diễn",
+      "questionText": "I can't talk on the phone at the moment because I _____ to work. (drive)",
+      "correctAnswer": "am driving",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 8,
+      "exerciseType": "Thì hiện tại tiếp diễn",
+      "questionText": "They _____ a movie at the cinema this evening. (watch)",
+      "correctAnswer": "are watching",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 9,
+      "exerciseType": "Thì hiện tại tiếp diễn",
+      "questionText": "He _____ for his final exams this week. (study)",
+      "correctAnswer": "is studying",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 10,
+      "exerciseType": "Thì hiện tại tiếp diễn",
+      "questionText": "We can't play soccer now because it _____. (rain)",
+      "correctAnswer": "is raining",
+      "type": "fill_in_blank",
+      "options": []
+    },
+
+    {
+      "id": 11,
+      "exerciseType": "Thì hiện tại hoàn thành",
+      "questionText": "She _____ three different countries so far. (visit)",
+      "correctAnswer": "has visited",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 12,
+      "exerciseType": "Thì hiện tại hoàn thành",
+      "questionText": "They _____ dinner before the movie starts. (already eat)",
+      "correctAnswer": "have already eaten",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 13,
+      "exerciseType": "Thì hiện tại hoàn thành",
+      "questionText": "He _____ a member of the club since last year. (be)",
+      "correctAnswer": "has been",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 14,
+      "exerciseType": "Thì hiện tại hoàn thành",
+      "questionText": "I _____ my homework, so I can relax now. (just finish)",
+      "correctAnswer": "have just finished",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 15,
+      "exerciseType": "Thì hiện tại hoàn thành",
+      "questionText": "We _____ this type of cuisine before. (never try)",
+      "correctAnswer": "have never tried",
+      "type": "fill_in_blank",
+      "options": []
+    },
+
+    {
+      "id": 16,
+      "exerciseType": "Thì hiện tại hoàn thành tiếp diễn",
+      "questionText": "She _____ for the exam for the past few hours. (study)",
+      "correctAnswer": "has been studying",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 17,
+      "exerciseType": "Thì hiện tại hoàn thành tiếp diễn",
+      "questionText": "They _____ on the project since yesterday morning. (work)",
+      "correctAnswer": "have been working",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 18,
+      "exerciseType": "Thì hiện tại hoàn thành tiếp diễn",
+      "questionText": "He _____ the piano all afternoon. (practicing)",
+      "correctAnswer": "has been practicing",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 19,
+      "exerciseType": "Thì hiện tại hoàn thành tiếp diễn",
+      "questionText": "I _____ this book for a while, and it's really interesting. (read)",
+      "correctAnswer": "have been reading",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 20,
+      "exerciseType": "Thì hiện tại hoàn thành tiếp diễn",
+      "questionText": "We _____ for the bus for over half an hour. (wait)",
+      "correctAnswer": "have been waiting",
+      "type": "fill_in_blank",
+      "options": []
+    },
+
+    {
+      "id": 21,
+      "exerciseType": "Quá khứ tiếp diễn (Trắc nghiệm)",
+      "questionText": "What __________ when the power went out?",
+      "type": "multiple_choice",
+      "options": [
+        "A. did you do",
+        "B. were you do",
+        "C. were you doing",
+        "D. have you done"
+      ],
+      "correctOption": "C"
+    },
+    {
+      "id": 22,
+      "exerciseType": "Quá khứ tiếp diễn (Trắc nghiệm)",
+      "questionText": "She __________ a book while her brother played outside.",
+      "type": "multiple_choice",
+      "options": [
+        "A. reading",
+        "B. was reading",
+        "C. has reading",
+        "D. had reading"
+      ],
+      "correctOption": "B"
+    },
+    {
+      "id": 23,
+      "exerciseType": "Quá khứ tiếp diễn (Trắc nghiệm)",
+      "questionText": "When I saw him, he __________ dinner in the kitchen.",
+      "type": "multiple_choice",
+      "options": [
+        "A. cooked",
+        "B. cooks",
+        "C. had cooked",
+        "D. was cooking"
+      ],
+      "correctOption": "D"
+    },
+    {
+      "id": 24,
+      "exerciseType": "Quá khứ tiếp diễn (Trắc nghiệm)",
+      "questionText": "They __________ a movie when the storm started.",
+      "type": "multiple_choice",
+      "options": [
+        "A. watched",
+        "B. have watched",
+        "C. were watch",
+        "D. were watching"
+      ],
+      "correctOption": "D"
+    },
+    {
+      "id": 25,
+      "exerciseType": "Quá khứ tiếp diễn (Trắc nghiệm)",
+      "questionText": "Last night 7 p.m, I __________ for my English test.",
+      "type": "multiple_choice",
+      "options": [
+        "A. was studying",
+        "B. study",
+        "C. am studying",
+        "D. had studied"
+      ],
+      "correctOption": "A"
+    },
+
+    {
+      "id": 26,
+      "exerciseType": "Quá khứ hoàn thành tiếp diễn",
+      "questionText": "By the time I arrived, they _____ for over an hour. (wait)",
+      "correctAnswer": "had been waiting",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 27,
+      "exerciseType": "Quá khứ hoàn thành tiếp diễn",
+      "questionText": "She _____ at that company for five years before she moved to a new job. (work)",
+      "correctAnswer": "had been working",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 28,
+      "exerciseType": "Quá khứ hoàn thành tiếp diễn",
+      "questionText": "We were tired because we _____ all day. (hike)",
+      "correctAnswer": "had been hiking",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 29,
+      "exerciseType": "Quá khứ hoàn thành tiếp diễn",
+      "questionText": "He _____ for the exam the whole week, so he felt well-prepared. (study)",
+      "correctAnswer": "had been studying",
+      "type": "fill_in_blank",
+      "options": []
+    },
+    {
+      "id": 30,
+      "exerciseType": "Quá khứ hoàn thành tiếp diễn",
+      "questionText": "By the time the party started, they _____ the venue for hours. (decorate)",
+      "correctAnswer": "had been decorating",
+      "type": "fill_in_blank",
+      "options": []
+    }
+  ]
+}
