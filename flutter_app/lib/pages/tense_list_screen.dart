@@ -1,4 +1,3 @@
-// lib/pages/tense_list_screen.dart
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -33,27 +32,56 @@ class _TenseListScreenState extends State<TenseListScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Chọn Chủ điểm Ngữ pháp'),
+        centerTitle: true,
+        elevation: 4,
+        shadowColor: Colors.black54,
       ),
       body: _isLoading
           ? Center(child: CircularProgressIndicator())
           : ListView.builder(
+        padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
         itemCount: tenses.length,
         itemBuilder: (context, index) {
           final tense = tenses[index];
-          return Card(
-            margin: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-            child: ListTile(
-              title: Text(tense['name'] ?? ''),
-              subtitle: Text(tense['description'] ?? ''),
-              trailing: Icon(Icons.arrow_forward),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (_) => TenseDetailScreen(tense: tense),
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => TenseDetailScreen(tense: tense),
+                ),
+              );
+            },
+            child: Container(
+              margin: EdgeInsets.only(bottom: 12),
+              padding: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(16),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black26,
+                    blurRadius: 6,
+                    offset: Offset(2, 4),
                   ),
-                );
-              },
+                ],
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    tense['name'] ?? '',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                    color: Colors.grey[600],
+                  ),
+                ],
+              ),
             ),
           );
         },

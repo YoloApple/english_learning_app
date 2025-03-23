@@ -1,4 +1,3 @@
-// lib/pages/grammar_screen.dart
 import 'package:flutter/material.dart';
 
 class GrammarScreen extends StatelessWidget {
@@ -8,7 +7,6 @@ class GrammarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Hiển thị các thông tin từ đối tượng tense
     return SingleChildScrollView(
       padding: EdgeInsets.all(16.0),
       child: Column(
@@ -22,6 +20,10 @@ class GrammarScreen extends StatelessWidget {
           SizedBox(height: 8),
           _buildStructureSection(tense['structure']),
           SizedBox(height: 20),
+          Text('Cách dùng:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          SizedBox(height: 8),
+          _buildUsageSection(tense['usage']),
+          SizedBox(height: 20),
           Text('Ví dụ:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
           SizedBox(height: 8),
           _buildExamples(tense['examples']),
@@ -30,26 +32,47 @@ class GrammarScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildStructureSection(Map<String, dynamic> structure) {
+  Widget _buildStructureSection(Map<String, dynamic>? structure) {
+    if (structure == null) return SizedBox();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("Affirmative: ${structure['affirmative']}", style: TextStyle(fontSize: 16)),
+        Text("Affirmative: ${structure['affirmative'] ?? ''}", style: TextStyle(fontSize: 16)),
         SizedBox(height: 4),
-        Text("Negative: ${structure['negative']}", style: TextStyle(fontSize: 16)),
+        Text("Negative: ${structure['negative'] ?? ''}", style: TextStyle(fontSize: 16)),
         SizedBox(height: 4),
-        Text("Interrogative: ${structure['interrogative']}", style: TextStyle(fontSize: 16)),
+        Text("Interrogative: ${structure['interrogative'] ?? ''}", style: TextStyle(fontSize: 16)),
       ],
     );
   }
 
-  Widget _buildExamples(List<dynamic> examples) {
+  Widget _buildUsageSection(List<dynamic>? usage) {
+    if (usage == null || usage.isEmpty) return SizedBox();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: usage.map<Widget>((use) {
+        return Padding(
+          padding: const EdgeInsets.symmetric(vertical: 4.0),
+          child: Text("• $use", style: TextStyle(fontSize: 16)),
+        );
+      }).toList(),
+    );
+  }
+
+  Widget _buildExamples(List<dynamic>? examples) {
+    if (examples == null || examples.isEmpty) return SizedBox();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: examples.map<Widget>((ex) {
         return Padding(
-          padding: const EdgeInsets.symmetric(vertical: 2.0),
-          child: Text("• $ex", style: TextStyle(fontSize: 16)),
+          padding: const EdgeInsets.symmetric(vertical: 4.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("• ${ex['sentence']}", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              Text("  ${ex['translation']}", style: TextStyle(fontSize: 14, fontStyle: FontStyle.italic)),
+            ],
+          ),
         );
       }).toList(),
     );

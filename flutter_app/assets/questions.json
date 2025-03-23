@@ -166,7 +166,7 @@
 
     {
       "id": 21,
-      "exerciseType": "Quá khứ tiếp diễn (Trắc nghiệm)",
+      "exerciseType": "Thì quá khứ tiếp diễn",
       "questionText": "What __________ when the power went out?",
       "type": "multiple_choice",
       "options": [
@@ -179,7 +179,7 @@
     },
     {
       "id": 22,
-      "exerciseType": "Quá khứ tiếp diễn (Trắc nghiệm)",
+      "exerciseType": "Thì quá khứ tiếp diễn",
       "questionText": "She __________ a book while her brother played outside.",
       "type": "multiple_choice",
       "options": [
@@ -192,7 +192,7 @@
     },
     {
       "id": 23,
-      "exerciseType": "Quá khứ tiếp diễn (Trắc nghiệm)",
+      "exerciseType": "Thì quá khứ tiếp diễn",
       "questionText": "When I saw him, he __________ dinner in the kitchen.",
       "type": "multiple_choice",
       "options": [
@@ -205,7 +205,7 @@
     },
     {
       "id": 24,
-      "exerciseType": "Quá khứ tiếp diễn (Trắc nghiệm)",
+      "exerciseType": "Thì quá khứ tiếp diễn",
       "questionText": "They __________ a movie when the storm started.",
       "type": "multiple_choice",
       "options": [
@@ -218,7 +218,7 @@
     },
     {
       "id": 25,
-      "exerciseType": "Quá khứ tiếp diễn (Trắc nghiệm)",
+      "exerciseType": "Thì quá khứ tiếp diễn",
       "questionText": "Last night 7 p.m, I __________ for my English test.",
       "type": "multiple_choice",
       "options": [
@@ -232,7 +232,7 @@
 
     {
       "id": 26,
-      "exerciseType": "Quá khứ hoàn thành tiếp diễn",
+      "exerciseType": "Thì quá khứ hoàn thành tiếp diễn",
       "questionText": "By the time I arrived, they _____ for over an hour. (wait)",
       "correctAnswer": "had been waiting",
       "type": "fill_in_blank",
@@ -240,7 +240,7 @@
     },
     {
       "id": 27,
-      "exerciseType": "Quá khứ hoàn thành tiếp diễn",
+      "exerciseType": "Thì quá khứ hoàn thành tiếp diễn",
       "questionText": "She _____ at that company for five years before she moved to a new job. (work)",
       "correctAnswer": "had been working",
       "type": "fill_in_blank",
@@ -248,7 +248,7 @@
     },
     {
       "id": 28,
-      "exerciseType": "Quá khứ hoàn thành tiếp diễn",
+      "exerciseType": "Thì quá khứ hoàn thành tiếp diễn",
       "questionText": "We were tired because we _____ all day. (hike)",
       "correctAnswer": "had been hiking",
       "type": "fill_in_blank",
@@ -256,7 +256,7 @@
     },
     {
       "id": 29,
-      "exerciseType": "Quá khứ hoàn thành tiếp diễn",
+      "exerciseType": "Thì quá khứ hoàn thành tiếp diễn",
       "questionText": "He _____ for the exam the whole week, so he felt well-prepared. (study)",
       "correctAnswer": "had been studying",
       "type": "fill_in_blank",
@@ -264,7 +264,7 @@
     },
     {
       "id": 30,
-      "exerciseType": "Quá khứ hoàn thành tiếp diễn",
+      "exerciseType": "Thì quá khứ hoàn thành tiếp diễn",
       "questionText": "By the time the party started, they _____ the venue for hours. (decorate)",
       "correctAnswer": "had been decorating",
       "type": "fill_in_blank",
