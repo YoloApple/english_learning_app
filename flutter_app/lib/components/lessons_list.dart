@@ -34,13 +34,12 @@ class LessonsList extends StatelessWidget {
 
           return GestureDetector(
             onTap: (){
-              if (lesson["title"]=="Basic English"){
-                Navigator.pushReplacementNamed(context, '/vocab');
-              }
-              else if(lesson["title"]=="Conversation Skills"){
-                Navigator.pushReplacementNamed(context, '/category');
-              }else if(lesson["title"]=="Advanced Grammar"){
-                Navigator.pushReplacementNamed(context, '/tense_list');
+              if (lesson["title"] == "Basic English") {
+                Navigator.pushNamed(context, '/vocab'); // Không thay thế, chỉ đẩy lên
+              } else if (lesson["title"] == "Conversation Skills") {
+                Navigator.pushNamed(context, '/category');
+              } else if (lesson["title"] == "Advanced Grammar") {
+                Navigator.pushNamed(context, '/tense_list');
               }
             },
             child: Container(

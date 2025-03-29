@@ -1,10 +1,8 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_app/components/my_button.dart';
 import 'package:flutter_app/components/my_text_field.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -16,6 +14,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+  bool isRememberMe = false;
 
   void signUserIn() async {
     FocusScope.of(context).unfocus();
@@ -36,20 +35,10 @@ class _LoginScreenState extends State<LoginScreen> {
     );
 
     try {
-      UserCredential userCredential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
-
-      User? user = userCredential.user;
-      if (user != null && !user.emailVerified) {
-        await user.sendEmailVerification();
-        Navigator.pop(context);
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Vui lòng xác minh email của bạn trước khi đăng nhập.")),
-        );
-        return;
-      }
 
       Navigator.pop(context);
       Navigator.pushReplacementNamed(context, '/home');
@@ -61,86 +50,132 @@ class _LoginScreenState extends State<LoginScreen> {
       else if (e.code == 'wrong-password') errorMessage = "Sai mật khẩu.";
       else if (e.code == 'invalid-email') errorMessage = "Email không hợp lệ.";
 
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(errorMessage)));
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(errorMessage)));
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    final bool isSmallScreen = screenSize.width < 400;
+
     return Scaffold(
       backgroundColor: Colors.grey[200],
-      body: LayoutBuilder(
-        builder: (context, constraints) {
-          return SingleChildScrollView(
-            child: ConstrainedBox(
-              constraints: BoxConstraints(minHeight: constraints.maxHeight),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 50),
-                child: Container(
-                  padding: const EdgeInsets.all(25),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    gradient: const LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Color(0xFFb2ebf2),
-                        Color(0xFFffffff),
+      body: Center(
+        child: SingleChildScrollView(
+          child: Container(
+            width: isSmallScreen ? screenSize.width * 0.9 : 400,
+            padding: const EdgeInsets.all(25),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              gradient: const LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Color(0xFFb2ebf2), Color(0xFFffffff)],
+              ),
+              boxShadow: const [
+                BoxShadow(
+                  color: Colors.black26,
+                  blurRadius: 10,
+                  spreadRadius: 2,
+                  offset: Offset(0, 5),
+                ),
+              ],
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  'Welcome Back!',
+                  style: GoogleFonts.poppins(
+                    color: Colors.blue[900],
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  'Login to continue',
+                  style: GoogleFonts.poppins(
+                    color: Colors.grey[700],
+                    fontSize: 16,
+                  ),
+                ),
+                const SizedBox(height: 40),
+                MyTextField(
+                  controller: emailController,
+                  hintText: 'Email',
+                  obsecureText: false,
+                  autofocus: false,
+                ),
+                const SizedBox(height: 25),
+                MyTextField(
+                  controller: passwordController,
+                  hintText: 'Password',
+                  obsecureText: true,
+                  autofocus: false,
+                ),
+                const SizedBox(height: 10),
+
+                /// Đưa "Remember Me" và "Forgot Password?" thành 2 dòng riêng biệt
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Checkbox(
+                          value: isRememberMe,
+                          onChanged: (value) {
+                            setState(() {
+                              isRememberMe = value!;
+                            });
+                          },
+                        ),
+                        const Text("Remember Me"),
                       ],
                     ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black26,
-                        blurRadius: 10,
-                        spreadRadius: 2,
-                        offset: Offset(0, 5),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: TextButton(
+                        onPressed: () =>
+                            Navigator.pushNamed(context, '/forgot-password'),
+                        child: const Text(
+                          "Forgot Password?",
+                          style: TextStyle(
+                            color: Colors.blueAccent,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
-                    ],
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Welcome Back!',
-                        style: GoogleFonts.poppins(
-                          color: Colors.blue[900],
-                          fontSize: 32,
+                    ),
+                  ],
+                ),
+
+                const SizedBox(height: 25),
+                MyButton(onTap: signUserIn),
+                const SizedBox(height: 30),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text("Don't have an account? "),
+                    GestureDetector(
+                      onTap: () => Navigator.pushNamed(context, '/register'),
+                      child: Text(
+                        "Sign Up",
+                        style: TextStyle(
+                          color: Colors.blueAccent,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(height: 10),
-                      Text(
-                        'Login to continue',
-                        style: GoogleFonts.poppins(color: Colors.grey[700], fontSize: 16),
-                      ),
-                      const SizedBox(height: 40),
-                      MyTextField(controller: emailController, hintText: 'Email', obsecureText: false, autofocus: false),
-                      const SizedBox(height: 25),
-                      MyTextField(controller: passwordController, hintText: 'Password', obsecureText: true, autofocus: false),
-                      const SizedBox(height: 25),
-                      MyButton(onTap: signUserIn),
-                      const SizedBox(height: 30),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text("Don't have an account? "),
-                          GestureDetector(
-                            onTap: () => Navigator.pushNamed(context, '/register'),
-                            child: Text(
-                              "Sign Up",
-                              style: TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 50),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              ),
+                const SizedBox(height: 30),
+              ],
             ),
-          );
-        },
+          ),
+        ),
       ),
     );
   }

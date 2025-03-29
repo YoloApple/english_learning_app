@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/components/swipe_back_wrapper.dart';
 import 'conversation_screen.dart';
 
 class CategoryScreen extends StatelessWidget {
@@ -20,58 +21,60 @@ class CategoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Conversation Skills')),
-      body: GridView.builder(
-        padding: const EdgeInsets.all(10),
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10,
-        ),
-        itemCount: categories.length,
-        itemBuilder: (context, index) {
-          final category = categories[index];
-
-          return GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ConversationScreen(category: category['title']),
-                ),
-              );
-            },
-            child: Container(
-              decoration: BoxDecoration(
-                color: category['color'],
-                borderRadius: BorderRadius.circular(15),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.3),
-                    blurRadius: 8,
-                    offset: const Offset(3, 3),
+    return SwipeBackWrapper(
+      child: Scaffold(
+        appBar: AppBar(title: const Text('Conversation Skills')),
+        body: GridView.builder(
+          padding: const EdgeInsets.all(10),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+          ),
+          itemCount: categories.length,
+          itemBuilder: (context, index) {
+            final category = categories[index];
+      
+            return GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ConversationScreen(category: category['title']),
                   ),
-                ],
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(category['icon'], color: Colors.white, size: 40),
-                  const SizedBox(height: 10),
-                  Text(
-                    category['title'],
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
+                );
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  color: category['color'],
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.3),
+                      blurRadius: 8,
+                      offset: const Offset(3, 3),
                     ),
-                  ),
-                ],
+                  ],
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(category['icon'], color: Colors.white, size: 40),
+                    const SizedBox(height: 10),
+                    Text(
+                      category['title'],
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-          );
-        },
+            );
+          },
+        ),
       ),
     );
   }

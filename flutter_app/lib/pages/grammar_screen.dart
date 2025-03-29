@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/components/swipe_back_wrapper.dart';
 
 class GrammarScreen extends StatelessWidget {
   final Map<String, dynamic> tense;
@@ -7,27 +8,29 @@ class GrammarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      padding: EdgeInsets.all(16.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(tense['name'] ?? '', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
-          SizedBox(height: 10),
-          Text(tense['description'] ?? '', style: TextStyle(fontSize: 16)),
-          SizedBox(height: 20),
-          Text('Cấu trúc:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-          SizedBox(height: 8),
-          _buildStructureSection(tense['structure']),
-          SizedBox(height: 20),
-          Text('Cách dùng:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-          SizedBox(height: 8),
-          _buildUsageSection(tense['usage']),
-          SizedBox(height: 20),
-          Text('Ví dụ:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-          SizedBox(height: 8),
-          _buildExamples(tense['examples']),
-        ],
+    return SwipeBackWrapper(
+      child: SingleChildScrollView(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(tense['name'] ?? '', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+            SizedBox(height: 10),
+            Text(tense['description'] ?? '', style: TextStyle(fontSize: 16)),
+            SizedBox(height: 20),
+            Text('Cấu trúc:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            SizedBox(height: 8),
+            _buildStructureSection(tense['structure']),
+            SizedBox(height: 20),
+            Text('Cách dùng:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            SizedBox(height: 8),
+            _buildUsageSection(tense['usage']),
+            SizedBox(height: 20),
+            Text('Ví dụ:', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            SizedBox(height: 8),
+            _buildExamples(tense['examples']),
+          ],
+        ),
       ),
     );
   }

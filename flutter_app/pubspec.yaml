@@ -47,6 +47,8 @@ dependencies:
   flutter_tts: ^4.2.2
   sqflite: ^2.0.0+4
   path: ^1.8.0
+  audioplayers: ^5.2.1
+  just_audio: ^0.9.36
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -78,6 +80,7 @@ flutter:
       - assets/sentences.json
       - assets/grammar.json
       - assets/questions.json
+      - assets/flashcard.json
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

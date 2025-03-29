@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/category_screen.dart';
 import 'package:flutter_app/pages/conversation_screen.dart';
 import 'package:flutter_app/pages/exercise_screen.dart';
+import 'package:flutter_app/pages/falshcard_screen.dart';
 import 'package:flutter_app/pages/grammar_screen.dart';
 import 'package:flutter_app/pages/register_screen.dart';
 import 'package:flutter_app/pages/tense_list_screen.dart';
@@ -53,6 +54,7 @@ class MyApp extends StatelessWidget {
         '/tense_list': (context) => TenseListScreen(),
         '/grammar': (context) => GrammarScreen(tense: {}),  // Chú ý: Cần truyền dữ liệu tense đúng
         '/exercise': (context) => ExerciseScreen(tense: {}), // Chú ý: Cần truyền dữ liệu tense đúng
+        '/flashcard': (context) => FlashcardScreen(),
       },
     );
   }

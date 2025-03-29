@@ -1,0 +1,871 @@
+{
+    "bodyParts": [
+      { "word": "Arm", "phonetic": "/ɑrm/", "meaning": "cánh tay" },
+      { "word": "Back", "phonetic": "/bæk/", "meaning": "lưng" },
+      { "word": "Belly", "phonetic": "/ˈbɛli/", "meaning": "bụng" },
+      { "word": "Blood", "phonetic": "/blʌd/", "meaning": "máu" },
+      { "word": "Body", "phonetic": "/ˈbɑdi/", "meaning": "cơ thể" },
+      { "word": "Body part", "phonetic": "/ˈbɑdi pɑrt/", "meaning": "bộ phận cơ thể" },
+      { "word": "Bone", "phonetic": "/boʊn/", "meaning": "xương" },
+      { "word": "Bottom", "phonetic": "/ˈbɑtəm/", "meaning": "mông" },
+      { "word": "Brain", "phonetic": "/breɪn/", "meaning": "não" },
+      { "word": "Chest", "phonetic": "/ʧɛst/", "meaning": "ngực, lồng ngực" },
+      { "word": "Ear", "phonetic": "/Ir/", "meaning": "tai" },
+      { "word": "Eye", "phonetic": "/aɪ/", "meaning": "mắt" },
+      { "word": "Face", "phonetic": "/feɪs/", "meaning": "khuôn mặt" },
+      { "word": "Finger", "phonetic": "/ˈfɪŋgər/", "meaning": "ngón tay" },
+      { "word": "Foot", "phonetic": "/fʊt/", "meaning": "bàn chân" },
+      { "word": "Hair", "phonetic": "/hɛr/", "meaning": "tóc" },
+      { "word": "Hand", "phonetic": "/hænd/", "meaning": "bàn tay" },
+      { "word": "Head", "phonetic": "/hɛd/", "meaning": "đầu" },
+      { "word": "Heart", "phonetic": "/hɑrt/", "meaning": "trái tim" },
+      { "word": "Hip", "phonetic": "/hɪp/", "meaning": "hông" },
+      { "word": "Leg", "phonetic": "/lɛg/", "meaning": "chân" },
+      { "word": "Lip", "phonetic": "/lɪp/", "meaning": "môi" },
+      { "word": "Mouth", "phonetic": "/maʊθ/", "meaning": "miệng" },
+      { "word": "Neck", "phonetic": "/nɛk/", "meaning": "cổ" },
+      { "word": "Nose", "phonetic": "/noʊz/", "meaning": "mũi" },
+      { "word": "Shoulder", "phonetic": "/ˈʃoʊldər/", "meaning": "vai" },
+      { "word": "Skin", "phonetic": "/skɪn/", "meaning": "làn da" },
+      { "word": "Thigh", "phonetic": "/θaɪ/", "meaning": "đùi" },
+      { "word": "Toe", "phonetic": "/toʊ/", "meaning": "ngón chân" },
+      { "word": "Tongue", "phonetic": "/tʌŋ/", "meaning": "lưỡi" },
+      { "word": "Tooth", "phonetic": "/tuθ/", "meaning": "răng" },
+      { "word": "Waist", "phonetic": "/weɪst/", "meaning": "vòng eo, eo" }
+    ],
+    "appearance": [
+      { "word": "Attractive", "phonetic": "/əˈtræktɪv/", "meaning": "quyến rũ, hấp dẫn" },
+      { "word": "Beautiful", "phonetic": "/ˈbjutəfəl/", "meaning": "xinh đẹp, đẹp" },
+      { "word": "Body shape", "phonetic": "/ˈbɑdi ʃeɪp/", "meaning": "vóc dáng, thân hình" },
+      { "word": "Charming", "phonetic": "/ˈʧɑrmɪŋ/", "meaning": "quyến rũ, thu hút" },
+      { "word": "Cute", "phonetic": "/Kjut/", "meaning": "đáng yêu, dễ thương" },
+      { "word": "Fat", "phonetic": "/fæt/", "meaning": "thừa cân, béo" },
+      { "word": "Feature", "phonetic": "/ˈfiʧər/", "meaning": "đặc điểm, nét nổi bật" },
+      { "word": "Fit", "phonetic": "/fɪt/", "meaning": "cân đối, gọn gàng" },
+      { "word": "Good-looking", "phonetic": "/gʊd-ˈlʊkɪŋ/", "meaning": "ưa nhìn, sáng sủa" },
+      { "word": "Handsome", "phonetic": "/gʊd-ˈlʊkɪŋ/", "meaning": "đẹp trai" },
+      { "word": "Height", "phonetic": "/haɪt/", "meaning": "chiều cao" },
+      { "word": "Look", "phonetic": "/lʊk/", "meaning": "vẻ ngoài" },
+      { "word": "Lovely", "phonetic": "/ˈlʌvli/", "meaning": "đáng yêu" },
+      { "word": "Muscular", "phonetic": "/ˈmʌskjələr/", "meaning": "cơ bắp, lực lưỡng" },
+      { "word": "Pretty", "phonetic": "/ˈprɪti/", "meaning": "xinh xắn" },
+      { "word": "Short", "phonetic": "/ʃɔrt/", "meaning": "thấp" },
+      { "word": "Tall", "phonetic": "/tɔl/", "meaning": "cao" },
+      { "word": "Thin", "phonetic": "/θɪn/", "meaning": "gầy" },
+      { "word": "Ugly", "phonetic": "/ˈʌgli/", "meaning": "xấu xí" },
+      { "word": "Weight", "phonetic": "/weɪt/", "meaning": "cân nặng" }
+    ],
+    "emotion": [
+      { "word": "Brave", "phonetic": "/breɪv/", "meaning": "can đảm, dũng cảm" },
+      { "word": "Cheerful", "phonetic": "/ˈʧɪrfəl/", "meaning": "sôi nổi, vui tươi" },
+      { "word": "Clever", "phonetic": "/ˈklɛvər/", "meaning": "thông minh, khôn khéo" },
+      { "word": "Confident", "phonetic": "/ˈkɑnfədənt/", "meaning": "tự tin" },
+      { "word": "Easy-going", "phonetic": "/ˈizi-ˈgoʊɪŋ/", "meaning": "thoải mái" },
+      { "word": "Energetic", "phonetic": "/ɛnərˈʤɛtɪk/", "meaning": "tràn đầy năng lượng" },
+      { "word": "Friendly", "phonetic": "/ˈfrɛndli/", "meaning": "thân thiện" },
+      { "word": "Funny", "phonetic": "/ˈfʌni/", "meaning": "hài hước, vui tính" },
+      { "word": "Generous", "phonetic": "/ˈʤɛnərəs/", "meaning": "hào phóng" },
+      { "word": "Grumpy", "phonetic": "/ˈgrʌmpi/", "meaning": "cáu kỉnh, khó chịu" },
+      { "word": "Hard-working", "phonetic": "/hɑrd-ˈwɜrkɪŋ/", "meaning": "siêng năng, chăm chỉ" },
+      { "word": "Honest", "phonetic": "/ˈɑnəst/", "meaning": "thật thà, trung thực" },
+      { "word": "Kind", "phonetic": "/kaɪnd/", "meaning": "tử tế, tốt bụng" },
+      { "word": "Lazy", "phonetic": "/ˈleɪzi/", "meaning": "lười biếng" },
+      { "word": "Loyal", "phonetic": "/ˈlɔɪəl/", "meaning": "trung thành" },
+      { "word": "Nice", "phonetic": "/naɪs/", "meaning": "tốt" },
+      { "word": "Polite", "phonetic": "/pəˈlaɪt/", "meaning": "lịch sự, lễ phép" },
+      { "word": "Quiet", "phonetic": "/ˈkwaɪət/", "meaning": "im lặng, trầm tính" },
+      { "word": "Selfish", "phonetic": "/ˈsɛlfɪʃ/", "meaning": "ích kỷ" },
+      { "word": "Shy", "phonetic": "/ʃaɪ/", "meaning": "nhút nhát, rụt rè" }
+    ],
+    "family": [
+      { "word": "Mother", "phonetic": "/ˈmʌðər/", "meaning": "mẹ" },
+      { "word": "Father", "phonetic": "/ˈfɑːðər/", "meaning": "bố" },
+      { "word": "Husband", "phonetic": "/ˈhʌzbənd/", "meaning": "chồng" },
+      { "word": "Wife", "phonetic": "/waɪf/", "meaning": "vợ" },
+      { "word": "Daughter", "phonetic": "/ˈdɔːtə(r)/", "meaning": "con gái" },
+      { "word": "Son", "phonetic": "/sʌn/", "meaning": "con trai" },
+      { "word": "Parent", "phonetic": "/ˈpeərənt/", "meaning": "bố mẹ" },
+      { "word": "Grandparent", "phonetic": "/ˈɡrænpeərənt/", "meaning": "ông bà" },
+      { "word": "Uncle", "phonetic": "/ˈʌŋkl/", "meaning": "bác trai/cậu/chú" },
+      { "word": "Aunt", "phonetic": "/ɑːnt/", "meaning": "bác gái/cô/dì" },
+      { "word": "Cousin", "phonetic": "/ˈkʌzn/", "meaning": "anh/chị/em họ" },
+      { "word": "Mother-in-law", "phonetic": "/ˈmʌðər ɪnˌlɔ/", "meaning": "mẹ chồng/mẹ vợ" },
+      { "word": "Son-in-law", "phonetic": "/ˈsʌn ɪn lɔ/", "meaning": "con rể" },
+      { "word": "Daughter-in-law", "phonetic": "/ˈdɔt̮ər ɪn lɔ/", "meaning": "con dâu" }
+    ],
+    "activity": [
+      { "word": "Build things", "phonetic": "/bɪld θɪŋz/", "meaning": "chơi xếp hình" },
+      { "word": "Build things", "phonetic": "/bɪld θɪŋz/", "meaning": "chơi xếp hình" },
+      { "word": "Chat with friends", "phonetic": "/ʧæt wɪð frɛndz/", "meaning": "tán gẫu với bạn bè" },
+      { "word": "Collect stamp", "phonetic": "/kəˈlɛkt stæmp/", "meaning": "sưu tập tem" },
+      { "word": "Do magic tricks", "phonetic": "/duː ˈmæʤɪk trɪks/", "meaning": "làm ảo thuật" },
+      { "word": "Do sports", "phonetic": "/duː spɔːts/", "meaning": "chơi thể thao" },
+      { "word": "Explore", "phonetic": "/ɪksˈplɔ/", "meaning": "đi thám hiểm" },
+      { "word": "Fly kites", "phonetic": "/flaɪ kaɪts/", "meaning": "thả diều" },
+      { "word": "Go camping", "phonetic": "/gəʊ ˈkæmpɪŋ/", "meaning": "đi cắm trại" },
+      { "word": "Go for a walk", "phonetic": "/gəʊ fɔːr ə wɔːk/", "meaning": "đi dạo" },
+      { "word": "Go partying", "phonetic": "/gəʊ ˈpɑːtɪɪŋ/", "meaning": "dự tiệc" },
+      { "word": "Go shopping", "phonetic": "/gəʊ ˈʃɒpɪŋ/", "meaning": "đi mua sắm" },
+      { "word": "Go skateboarding", "phonetic": "/gəʊ ˈskeɪtbɔːdɪŋ/", "meaning": "trượt ván" },
+      { "word": "Go swimming", "phonetic": "/gəʊ ˈswɪmɪŋ/", "meaning": "đi bơi" },
+      { "word": "Hang out with friends", "phonetic": "/hæŋ aʊt wɪð frɛndz/", "meaning": "đi chơi với bạn" },
+      { "word": "Jogging", "phonetic": "/ˈdʒɑː.ɡɪŋ/", "meaning": "chạy bộ" },
+      { "word": "Knit", "phonetic": "/nɪt/", "meaning": "đan lát" },
+      { "word": "Listen to music", "phonetic": "/ˈlɪsn tuː ˈmjuːzɪk/", "meaning": "nghe nhạc" },
+      { "word": "Mountaineering", "phonetic": "/ˌmaʊn.tənˈɪr.ɪŋ/", "meaning": "đi leo núi" },
+      { "word": "Play an instrument", "phonetic": "/pleɪ ən ˈɪnstrʊmənt/", "meaning": "chơi nhạc cụ" },
+      { "word": "Play chess", "phonetic": "/pleɪ ʧɛs/", "meaning": "chơi cờ" },
+      { "word": "Play computer games", "phonetic": "/pleɪ kəmˈpjuːtə geɪmz/", "meaning": "chơi game" },
+      { "word": "Read books", "phonetic": "/riːd bʊks/", "meaning": "đọc sách" },
+      { "word": "Sing", "phonetic": "/sɪŋ/", "meaning": "hát" },
+      { "word": "Surf net", "phonetic": "/sɜːf nɛt/", "meaning": "lướt net" },
+      { "word": "Take photo", "phonetic": "/teɪk ˈfəʊtəʊ/", "meaning": "chụp ảnh" },
+      { "word": "Go to the cinema", "phonetic": "/gəʊ tuː ðə ˈsɪnəmə/", "meaning": "đi xem phim" },
+      { "word": "Travel", "phonetic": "/ˈtræv.əl/", "meaning": "du lịch" },
+      { "word": "Watch television", "phonetic": "/wɒʧ ˈtɛlɪˌvɪʒən/", "meaning": "xem tivi" }
+    ],
+    "fashion": [
+      { "word": "Miniskirt", "phonetic": "/mɪniskɜːt/", "meaning": "chân váy ngắn" },
+      { "word": "Dress", "phonetic": "/dres/", "meaning": "váy liền thân" },
+      { "word": "Blouse", "phonetic": "/blaʊz/", "meaning": "áo sơ mi nữ" },
+      { "word": "Skirt", "phonetic": "/skɜːt/", "meaning": "chân váy" },
+      { "word": "Evening dress", "phonetic": "/i’vniη dres/", "meaning": "váy dạ hội" },
+      { "word": "Summer dress", "phonetic": "/’sʌmə dres/", "meaning": "váy mùa hè" },
+      { "word": "Wool dress", "phonetic": "/wul dres/", "meaning": "váy len" },
+      { "word": "Pinafore dress", "phonetic": "/’pinəfɔdres/", "meaning": "váy sát nách" },
+      { "word": "Pleated skirt", "phonetic": "/plit kət/", "meaning": "váy xếp ly" }
+    ],
+    "shopping": [
+      { "word": "Slacks", "phonetic": "/slæk/", "meaning": "váy rộng xoè" },
+      { "word": "Sheath dress", "phonetic": "/ʃiːθ dres/", "meaning": "váy bút chì" },
+      { "word": "Straight dress", "phonetic": "/streɪt dres/", "meaning": "váy suông" },
+      { "word": "Ruffled dress", "phonetic": "/rʌfld dres/", "meaning": "váy xếp tầng" },
+      { "word": "Shop", "phonetic": "/ʃɑp/", "meaning": "cửa tiệm" },
+      { "word": "Shop window", "phonetic": "/’wɪndoʊ/", "meaning": "cửa kính trưng bày" },
+      { "word": "Shop assistant", "phonetic": "/ə’sɪstənt/", "meaning": "nhân viên bán hàng" },
+      { "word": "Cashier", "phonetic": "/kæˈʃɪr/", "meaning": "nhân viên thu ngân" },
+      { "word": "Aisle", "phonetic": "/aɪl/", "meaning": "quầy hàng" },
+      { "word": "Shopping bag", "phonetic": "/’ʃɑpɪŋ bæɡ/", "meaning": "túi mua sắm" },
+      { "word": "Trolley", "phonetic": "/’trɑli/", "meaning": "xe đẩy mua sắm" },
+      { "word": "Plastic bag", "phonetic": "/’plæstɪk bæɡ/", "meaning": "túi nilon" },
+      { "word": "Stockroom", "phonetic": "/’stɑk,rum/", "meaning": "nhà kho" },
+      { "word": "Counter", "phonetic": "/’kaʊntər/", "meaning": "quầy tính tiền" },
+      { "word": "Fitting room", "phonetic": "/’fɪtɪŋ rum/", "meaning": "phòng thử đồ" },
+      { "word": "Shopping list", "phonetic": "/lɪst/", "meaning": "danh sách mua sắm" },
+      { "word": "Special offer", "phonetic": "/ˈspeʃlˈɔːfər/", "meaning": "ưu đãi đặc biệt" },
+      { "word": "Price", "phonetic": "/praɪs/", "meaning": "giá cả" },
+      { "word": "Queue", "phonetic": "/kju/", "meaning": "xếp hàng" }
+    ],
+    "advertisement": [
+      { "word": "Brand", "phonetic": "/brænd/", "meaning": "thương hiệu" },
+      { "word": "Sample", "phonetic": "/’sæmpəl/", "meaning": "hàng mẫu" },
+      { "word": "Leaflet", "phonetic": "/’liflɪt/", "meaning": "tờ rơi" },
+      { "word": "Billboard", "phonetic": "/’bɪl,boʊrd/", "meaning": "biển quảng cáo" },
+      { "word": "Catchphrase", "phonetic": "/’kæt∫freiz/", "meaning": "câu khẩu hiệu" },
+      { "word": "Customer", "phonetic": "/ˈkʌstəmər/", "meaning": "khách hàng" },
+      { "word": "Complaint", "phonetic": "/kəmˈpleɪnt/", "meaning": "phàn nàn" },
+      { "word": "Order", "phonetic": "/ɔːrdər/", "meaning": "đặt hàng" },
+      { "word": "Sell", "phonetic": "/sel/", "meaning": "bán" },
+      { "word": "Buy", "phonetic": "/baɪ/", "meaning": "mua" },
+      { "word": "Price tag", "phonetic": "/ˈpraɪs tæɡ/", "meaning": "nhãn giá" },
+      { "word": "Shopaholic", "phonetic": "/ˌʃɑːpəˈhɑːlɪk/", "meaning": "người nghiện mua sắm" },
+      { "word": "Expiration", "phonetic": "/,ekspə’rei∫n/", "meaning": "hạn sử dụng" }
+    ],
+    "travelVocabulary": [
+          {
+            "word": "Airline schedule",
+            "phonetic": "/ˈeəlaɪn ˈʃedjuːl/",
+            "meaning": "lịch bay"
+          },
+          {
+            "word": "Baggage allowance",
+            "phonetic": "/ˈbæɡɪdʒ əˈlaʊəns/",
+            "meaning": "lượng hành lý cho phép"
+          },
+          {
+            "word": "Boarding pass",
+            "phonetic": "/ˈbɔːdɪŋ kɑːd/",
+            "meaning": "thẻ lên máy bay"
+          },
+          {
+            "word": "Check-in",
+            "phonetic": "/tʃek – ɪn/",
+            "meaning": "thủ tục vào cửa"
+          },
+          {
+            "word": "Deposit",
+            "phonetic": "/dɪˈpɒzɪt/",
+            "meaning": "đặt cọc"
+          },
+          {
+            "word": "Domestic travel",
+            "phonetic": "/dəˈmestɪk ˈtrævl/",
+            "meaning": "du lịch nội địa"
+          },
+          {
+            "word": "Destination",
+            "phonetic": "/ˌdestɪˈneɪʃn/",
+            "meaning": "điểm đến"
+          },
+          {
+            "word": "High season",
+            "phonetic": "/haɪ ˈsiːzn/",
+            "meaning": "mùa cao điểm"
+          },
+          {
+            "word": "Low Season",
+            "phonetic": "/ləʊˈsiːzn/",
+            "meaning": "mùa ít khách"
+          },
+          {
+            "word": "Loyalty programme",
+            "phonetic": "/ˈlɔɪəltiˈprəʊɡræm/",
+            "meaning": "chương trình cho khách hàng thường xuyên"
+          },
+          {
+            "word": "Inclusive tour",
+            "phonetic": "/ɪnˈkluːsɪv tʊə(r)/",
+            "meaning": "tour trọn gói"
+          },
+          {
+            "word": "One way trip",
+            "phonetic": "/wʌn weɪ trɪp/",
+            "meaning": "chuyến đi 1 chiều"
+          },
+          {
+            "word": "Round trip",
+            "phonetic": "/ˌraʊnd ˈtrɪp/",
+            "meaning": "chuyến đi khứ hồi"
+          },
+          {
+            "word": "Itinerary",
+            "phonetic": "/aɪˈtɪnərəri/",
+            "meaning": "lịch trình"
+          }
+        ],
+        "schoolVocabulary": [
+          {
+            "word": "Ruler",
+            "phonetic": "/ˈruːlə/",
+            "type": "noun",
+            "meaning": "thước kẻ"
+          },
+          {
+            "word": "Blackboard",
+            "phonetic": "/ˈblækbɔːd/",
+            "type": "noun",
+            "meaning": "bảng đen"
+          },
+          {
+            "word": "Chalk",
+            "phonetic": "/ʧɔːk/",
+            "type": "noun",
+            "meaning": "phấn viết bảng"
+          },
+          {
+            "word": "Chair",
+            "phonetic": "/ʧeə/",
+            "type": "noun",
+            "meaning": "ghế"
+          },
+          {
+            "word": "Desk",
+            "phonetic": "/dɛsk/",
+            "type": "noun",
+            "meaning": "bàn học"
+          },
+          {
+            "word": "Clock",
+            "phonetic": "/klɒk/",
+            "type": "noun",
+            "meaning": "đồng hồ"
+          },
+          {
+            "word": "Pen",
+            "phonetic": "/pɛn/",
+            "type": "noun",
+            "meaning": "cái bút"
+          },
+          {
+            "word": "Pencil",
+            "phonetic": "/ˈpɛnsl/",
+            "type": "noun",
+            "meaning": "bút chì"
+          },
+          {
+            "word": "Notebook",
+            "phonetic": "/ˈnəʊtbʊk/",
+            "type": "noun",
+            "meaning": "quyển vở"
+          },
+          {
+            "word": "Backpack",
+            "phonetic": "/ˈbækˌpæk/",
+            "type": "noun",
+            "meaning": "cặp sách"
+          },
+          {
+            "word": "Scissors",
+            "phonetic": "/ˈsɪzəz/",
+            "type": "noun",
+            "meaning": "kéo"
+          },
+          {
+            "word": "Compass",
+            "phonetic": "/ˈkʌmpəs/",
+            "type": "noun",
+            "meaning": "com-pa"
+          },
+          {
+            "word": "Classmate",
+            "phonetic": "/ˈklɑːsmeɪt/",
+            "type": "noun",
+            "meaning": "bạn cùng lớp"
+          },
+          {
+            "word": "Break time",
+            "phonetic": "/breɪk taɪm/",
+            "type": "noun",
+            "meaning": "giờ ra chơi"
+          },
+          {
+            "word": "International school",
+            "phonetic": "/ˌɪntə(ː)ˈnæʃənl skuːl/",
+            "type": "noun",
+            "meaning": "trường quốc tế"
+          },
+          {
+            "word": "Boarding school",
+            "phonetic": "/ˈbɔːdɪŋ skuːl/",
+            "type": "noun",
+            "meaning": "trường nội trú"
+          },
+          {
+            "word": "Elementary school",
+            "phonetic": "/ˌɛlɪˈmɛntəri skuːl/",
+            "type": "noun",
+            "meaning": "trường tiểu học"
+          },
+          {
+            "word": "Secondary school",
+            "phonetic": "/ˈsɛkəndəri skuːl/",
+            "type": "noun",
+            "meaning": "trường cấp hai"
+          },
+          {
+            "word": "High school",
+            "phonetic": "/ˈhaɪ ˌskuːl/",
+            "type": "noun",
+            "meaning": "trường cấp ba"
+          },
+          {
+            "word": "Kindergarten",
+            "phonetic": "/ˈkɪndəˌgɑːtn/",
+            "type": "noun",
+            "meaning": "trường mầm non"
+          },
+          {
+            "word": "Computer room",
+            "phonetic": "/kəmˈpjuːtə ruːm/",
+            "type": "noun",
+            "meaning": "phòng máy tính"
+          },
+          {
+            "word": "Library",
+            "phonetic": "/ˈlaɪbrəri/",
+            "type": "noun",
+            "meaning": "thư viện"
+          },
+          {
+            "word": "School garden",
+            "phonetic": "/skuːl ˈgɑːdn/",
+            "type": "noun",
+            "meaning": "sân vườn trường"
+          },
+          {
+            "word": "Club",
+            "phonetic": "/klʌb/",
+            "type": "noun",
+            "meaning": "câu lạc bộ"
+          },
+          {
+            "word": "Subject",
+            "phonetic": "/ˈsʌbʤɪkt/",
+            "type": "noun",
+            "meaning": "môn học"
+          },
+          {
+            "word": "English",
+            "phonetic": "/ˈɪŋglɪʃ/",
+            "type": "noun",
+            "meaning": "tiếng Anh"
+          },
+          {
+            "word": "Mathematics",
+            "phonetic": "/ˌmæθɪˈmætɪks/",
+            "type": "noun",
+            "meaning": "môn toán"
+          },
+          {
+            "word": "Science",
+            "phonetic": "/ˈsaɪəns/",
+            "type": "noun",
+            "meaning": "môn khoa học"
+          },
+          {
+            "word": "History",
+            "phonetic": "/ˈhɪstəri/",
+            "type": "noun",
+            "meaning": "môn lịch sử"
+          },
+          {
+            "word": "Geography",
+            "phonetic": "/ʤɪˈɒgrəfi/",
+            "type": "noun",
+            "meaning": "môn địa lý"
+          },
+          {
+            "word": "Social studies",
+            "phonetic": "/ˈsəʊʃəl ˈstʌdiz/",
+            "type": "noun",
+            "meaning": "môn xã hội học"
+          }
+        ],
+        "weatherVocabulary": [
+          {
+            "word": "Dry",
+            "phonetic": "/drai/",
+            "type": "adj",
+            "meaning": "hanh khô"
+          },
+          {
+            "word": "Foggy",
+            "phonetic": "/’fɒgi/",
+            "type": "adj",
+            "meaning": "sương mù"
+          },
+          {
+            "word": "Humid",
+            "phonetic": "/’hju:mid/",
+            "type": "adj",
+            "meaning": "ẩm"
+          },
+          {
+            "word": "Overcast",
+            "phonetic": "/,əʊvə’kɑ:st/",
+            "type": "adj",
+            "meaning": "âm u"
+          },
+          {
+            "word": "Sunny",
+            "phonetic": "/’sʌni/",
+            "type": "adj",
+            "meaning": "nắng"
+          },
+          {
+            "word": "Cold",
+            "phonetic": "/koʊld/",
+            "type": "adj",
+            "meaning": "lạnh"
+          },
+          {
+            "word": "Freezing",
+            "phonetic": "/’fri:ziɳ/",
+            "type": "adj",
+            "meaning": "lạnh cóng"
+          },
+          {
+            "word": "Warm",
+            "phonetic": "/wɔ:m/",
+            "type": "adj",
+            "meaning": "ấm áp"
+          },
+          {
+            "word": "Drizzle",
+            "phonetic": "/’drizl/",
+            "type": "noun",
+            "meaning": "cơn mưa phùn"
+          },
+          {
+            "word": "Flood",
+            "phonetic": "/flʌd/",
+            "type": "noun",
+            "meaning": "lũ lụt"
+          },
+          {
+            "word": "Hail",
+            "phonetic": "/heil/",
+            "type": "noun",
+            "meaning": "mưa đá"
+          },
+          {
+            "word": "Gale",
+            "phonetic": "/geil/",
+            "type": "noun",
+            "meaning": "gió giật"
+          },
+          {
+            "word": "Rain",
+            "phonetic": "/rein/",
+            "type": "noun",
+            "meaning": "mưa"
+          }
+        ],
+        "environmentVocabulary": [
+          {
+            "word": "Environment",
+            "phonetic": "/ɪnˈvaɪ.rən.mənt/",
+            "type": "noun",
+            "meaning": "môi trường"
+          },
+          {
+            "word": "Acid rain",
+            "phonetic": "/æsɪd reɪn/",
+            "type": "noun",
+            "meaning": "mưa axit"
+          },
+          {
+            "word": "Air",
+            "phonetic": "/eər/",
+            "type": "noun",
+            "meaning": "không khí"
+          },
+          {
+            "word": "Air pollution",
+            "phonetic": "/eər pəˈluː.ʃən/",
+            "type": "noun",
+            "meaning": "ô nhiễm không khí"
+          },
+          {
+            "word": "Atmosphere",
+            "phonetic": "/ˈæt.mə.sfɪər/",
+            "type": "noun",
+            "meaning": "khí quyển"
+          },
+          {
+            "word": "Biodiversity",
+            "phonetic": "/ˌbaɪoʊdəˈvərsət̮i/",
+            "type": "noun",
+            "meaning": "đa dạng sinh học"
+          },
+          {
+            "word": "Biosphere reserve",
+            "phonetic": "/ˈbaɪoʊsfɪr rɪˈzɜːrv/",
+            "type": "noun",
+            "meaning": "khu dự trữ sinh quyển"
+          },
+          {
+            "word": "Climate",
+            "phonetic": "/ˈklaɪ.mət/",
+            "type": "noun",
+            "meaning": "khí hậu"
+          },
+          {
+            "word": "Climate change",
+            "phonetic": "/ ˈklaɪ.mət tʃeɪndʒ/",
+            "type": "noun",
+            "meaning": "biến đổi khí hậu"
+          },
+          {
+            "word": "Deforestation",
+            "phonetic": "/ˌdiːˌfɑːrɪˈsteɪʃn/",
+            "type": "noun",
+            "meaning": "sự phá rừng"
+          },
+          {
+            "word": "Destruction",
+            "phonetic": "/dɪsˈtrʌkʃən/",
+            "type": "noun",
+            "meaning": "sự phá hủy"
+          },
+          {
+            "word": "Disposal",
+            "phonetic": "/dɪsˈpəʊzəl/",
+            "type": "noun",
+            "meaning": "sự vứt bỏ"
+          },
+          {
+            "word": "Draught",
+            "phonetic": "/drɑːft/",
+            "type": "noun",
+            "meaning": "hạn hán"
+          },
+          {
+            "word": "Dust",
+            "phonetic": "/dʌst/",
+            "type": "noun",
+            "meaning": "bụi"
+          },
+          {
+            "word": "Ecosystem",
+            "phonetic": "/ˈiː.kəʊˌsɪs.təm/",
+            "type": "noun",
+            "meaning": "hệ sinh thái"
+          },
+          {
+            "word": "Forest fire",
+            "phonetic": "/ˈfɒr.ɪst ˌfaɪər/",
+            "type": "noun",
+            "meaning": "cháy rừng"
+          },
+          {
+            "word": "Greenhouse effect",
+            "phonetic": "/ˈɡriːnhaʊs ɪˈfekt/",
+            "type": "noun",
+            "meaning": "hiệu ứng nhà kính"
+          },
+          {
+            "word": "Groundwater",
+            "phonetic": "/ˈɡraʊndwɔːtər/",
+            "type": "noun",
+            "meaning": "nước ngầm"
+          }
+        ],
+    "animalVocabulary": [
+    { "word": "Dog", "phonetic": "/dɒg/", "type": "noun", "meaning": "con chó" },
+    { "word": "Cat", "phonetic": "/kæt/", "type": "noun", "meaning": "con mèo" },
+    { "word": "Goldfish", "phonetic": "/ˈgəʊldfɪʃ/", "type": "noun", "meaning": "cá vàng" },
+    { "word": "Hamster", "phonetic": "/ˈhæmstə/", "type": "noun", "meaning": "chuột Hamster" },
+    { "word": "Kitten", "phonetic": "/ˈkɪtn/", "type": "noun", "meaning": "mèo con" },
+    { "word": "Mouse", "phonetic": "/maʊs/", "type": "noun", "meaning": "chuột" },
+    { "word": "Parrot", "phonetic": "/ˈpærət/", "type": "noun", "meaning": "con vẹt" },
+    { "word": "Puppy", "phonetic": "/ˈpʌpi/", "type": "noun", "meaning": "chó con, cún con" },
+    { "word": "Rabbit", "phonetic": "/ˈræbɪt/", "type": "noun", "meaning": "con thỏ" },
+    { "word": "Squirrel", "phonetic": "/ˈskwɪrəl/", "type": "noun", "meaning": "con sóc" },
+    { "word": "Tropical fish", "phonetic": "/ˈtrɒpɪkəl fɪʃ/", "type": "noun", "meaning": "cá nhiệt đới" },
+    { "word": "Turtle", "phonetic": "/ˈtɜːtl/", "type": "noun", "meaning": "rùa" },
+    { "word": "Cow", "phonetic": "/kaʊ/", "type": "noun", "meaning": "con bò" },
+    { "word": "Bee", "phonetic": "/biː/", "type": "noun", "meaning": "con ong" },
+    { "word": "Chicken", "phonetic": "/ˈʧɪkɪn/", "type": "noun", "meaning": "con gà" },
+    { "word": "Crab", "phonetic": "/kræb/", "type": "noun", "meaning": "cua" },
+    { "word": "Deer", "phonetic": "/dɪə/", "type": "noun", "meaning": "con nai" },
+    { "word": "Dove", "phonetic": "/dʌv/", "type": "noun", "meaning": "chim bồ câu" },
+    { "word": "Ducks", "phonetic": "/dʌks/", "type": "noun", "meaning": "con vịt" },
+    { "word": "Fish", "phonetic": "/fɪʃ/", "type": "noun", "meaning": "cá" },
+    { "word": "Goat", "phonetic": "/gəʊt/", "type": "noun", "meaning": "con dê" },
+    { "word": "Horse", "phonetic": "/hɔːs/", "type": "noun", "meaning": "con ngựa" },
+    { "word": "Pig", "phonetic": "/pɪg/", "type": "noun", "meaning": "con lợn" },
+    { "word": "Rabbit", "phonetic": "/ˈræbɪt/", "type": "noun", "meaning": "con thỏ" },
+    { "word": "Sheep", "phonetic": "/ʃiːp/", "type": "noun", "meaning": "cừu" },
+    { "word": "Shrimp", "phonetic": "/ʃrɪmp/", "type": "noun", "meaning": "con tôm" },
+    { "word": "Turkey", "phonetic": "/ˈtɜːki/", "type": "noun", "meaning": "gà tây" }
+  ],
+  "foodVocabulary": [
+    { "word": "Rice", "phonetic": "/rīs/", "type": "noun", "meaning": "cơm trắng" },
+    { "word": "Fried rice", "phonetic": "/fraɪd raɪs/", "type": "noun", "meaning": "cơm chiên" },
+    { "word": "Noodles", "phonetic": "/ˈnuːdl/", "type": "noun", "meaning": "bún, phở, mì" },
+    { "word": "Porridge", "phonetic": "/ˈpɒrɪdʒ/", "type": "noun", "meaning": "cháo" },
+    { "word": "Cereals", "phonetic": "/ˈsɪəriəl/", "type": "noun", "meaning": "ngũ cốc" },
+    { "word": "Dumplings", "phonetic": "/ˈdʌmplɪŋ/", "type": "noun", "meaning": "bánh bao hấp" },
+    { "word": "Grilled lamb chops", "phonetic": "/ɡrɪld læm tʃɒp/", "type": "noun", "meaning": "sườn cừu nướng" },
+    { "word": "Curry", "phonetic": "/ˈkʌr.i/", "type": "noun", "meaning": "cà ri" },
+    { "word": "Hotpot", "phonetic": "/ˈhɒt.pɒt/", "type": "noun", "meaning": "lẩu" },
+    { "word": "Spaghetti", "phonetic": "/spəˈɡet.i/", "type": "noun", "meaning": "mỳ Ý" },
+    { "word": "Pasta", "phonetic": "/ˈpɑːstə/", "type": "noun", "meaning": "mì ống, mì sợi" },
+    { "word": "Smoked salmon", "phonetic": "/sməʊkt ˈsæm.ən/", "type": "noun", "meaning": "cá hồi hun khói" },
+    { "word": "Roasted duck", "phonetic": "/roʊstəd dʌk/", "type": "noun", "meaning": "vịt nướng" },
+    { "word": "Freshwater fish", "phonetic": "/ˈfrɛˌʃwɔtər fɪʃ/", "type": "noun", "meaning": "cá nước ngọt" },
+    { "word": "Seafood", "phonetic": "/ˈsiː.fuːd/", "type": "noun", "meaning": "hải sản" },
+    { "word": "Shrimps", "phonetic": "/ʃrɪmps/", "type": "noun", "meaning": "tôm" },
+    { "word": "Snails", "phonetic": "/sneɪlz/", "type": "noun", "meaning": "Ốc" },
+    { "word": "Squid", "phonetic": "/skwɪd/", "type": "noun", "meaning": "mực" },
+    { "word": "Mackerel", "phonetic": "/ˈmækərəl/", "type": "noun", "meaning": "cá thu" },
+    { "word": "Sole", "phonetic": "/səʊl/", "type": "noun", "meaning": "cá bơn" },
+    { "word": "Tuna", "phonetic": "/tuː.nə/", "type": "noun", "meaning": "cá ngừ" },
+    { "word": "Octopus", "phonetic": "/ˈɒk.tə.pəs/", "type": "noun", "meaning": "bạch tuộc" },
+    { "word": "Chicken breasts", "phonetic": "/ˈtʃɪkɪn brest/", "type": "noun", "meaning": "ức gà" },
+    { "word": "Chicken drumsticks", "phonetic": "/ˈtʃɪkɪn ˈdrʌmstɪk/", "type": "noun", "meaning": "đùi gà" },
+    { "word": "Cold cuts", "phonetic": "/ˈkəʊld kʌts/", "type": "noun", "meaning": "thịt nguội" },
+    { "word": "Pork side", "phonetic": "/pɔːk saɪd/", "type": "noun", "meaning": "thịt ba chỉ" }
+  ],
+  "beverageVocabulary": [
+    { "word": "Beer", "phonetic": "/bɪə/", "type": "noun", "meaning": "bia" },
+    { "word": "Chocolate milk", "phonetic": "/ˈʧɒkəlɪt mɪlk/", "type": "noun", "meaning": "sô cô la sữa" },
+    { "word": "Cocoa", "phonetic": "/ˈkəʊkəʊ/", "type": "noun", "meaning": "ca cao" },
+    { "word": "Coconut milk", "phonetic": "/ˈkəʊkənʌt mɪlk/", "type": "noun", "meaning": "sữa dừa" },
+    { "word": "Coffee", "phonetic": "/ˈkɒfi/", "type": "noun", "meaning": "cà phê" },
+    { "word": "Fruit juice", "phonetic": "/fruːt ʤuːs/", "type": "noun", "meaning": "nước hoa quả" },
+    { "word": "Green tea", "phonetic": "/griːn tiː/", "type": "noun", "meaning": "trà xanh" },
+    { "word": "Hot chocolate", "phonetic": "/hɒt ˈʧɒkəlɪt/", "type": "noun", "meaning": "sô cô la nóng" },
+    { "word": "Iced tea", "phonetic": "/aɪst tiː/", "type": "noun", "meaning": "trà đá" },
+    { "word": "Juice", "phonetic": "/ʤuːs/", "type": "noun", "meaning": "nước ép" },
+    { "word": "Lemonade", "phonetic": "/ˌlɛməˈneɪd/", "type": "noun", "meaning": "nước chanh" },
+    { "word": "Milk", "phonetic": "/mɪlk/", "type": "noun", "meaning": "sữa" },
+    { "word": "Milkshake", "phonetic": "/ˈmɪlkʃeɪk/", "type": "noun", "meaning": "sữa lắc" },
+    { "word": "Orange juice", "phonetic": "/ˈɒrɪnʤ ʤuːs/", "type": "noun", "meaning": "nước cam" },
+    { "word": "Smoothie", "phonetic": "/ˈsmuːði/", "type": "noun", "meaning": "sinh tố" },
+    { "word": "Soda", "phonetic": "/ˈsəʊdə/", "type": "noun", "meaning": "nước ngọt" },
+    { "word": "Tea", "phonetic": "/tiː/", "type": "noun", "meaning": "trà" },
+    { "word": "Tea bag", "phonetic": "/tiː bæg/", "type": "noun", "meaning": "trà túi lọc" },
+    { "word": "Tomato juice", "phonetic": "/təˈmɑːtəʊ ʤuːs/", "type": "noun", "meaning": "nước ép cà chua" },
+    { "word": "Water", "phonetic": "/ˈwɔːtə/", "type": "noun", "meaning": "nước uống" },
+    { "word": "Wine", "phonetic": "/waɪn/", "type": "noun", "meaning": "rượu" }
+  ],
+  "colorVocabulary": [
+    { "word": "Black", "phonetic": "/blæk/", "type": "adj", "meaning": "màu đen" },
+    { "word": "White", "phonetic": "/waɪt/", "type": "adj", "meaning": "màu trắng" },
+    { "word": "Red", "phonetic": "/red/", "type": "adj", "meaning": "màu đỏ" },
+    { "word": "Yellow", "phonetic": "/ˈjel.əʊ/", "type": "adj", "meaning": "màu vàng" },
+    { "word": "Orange", "phonetic": "/ˈɒr.ɪndʒ/", "type": "adj", "meaning": "màu cam" },
+    { "word": "Purple", "phonetic": "/ˈpɜː(ɹ).pəl/", "type": "adj", "meaning": "màu tím" },
+    { "word": "Blue", "phonetic": "/bluː/", "type": "adj", "meaning": "màu xanh" },
+    { "word": "Green", "phonetic": "/griːn/", "type": "adj", "meaning": "màu xanh lá" },
+    { "word": "Brown", "phonetic": "/braʊn/", "type": "adj", "meaning": "màu nâu" },
+    { "word": "Gray", "phonetic": "/greɪ/", "type": "adj", "meaning": "màu nâu" },
+    { "word": "Pink", "phonetic": "/pɪŋk/", "type": "adj", "meaning": "màu hồng" },
+    { "word": "Turquoise", "phonetic": "/ˈtɜː.kwɔɪz/", "type": "adj", "meaning": "màu lam" },
+    { "word": "Dark Green", "phonetic": "/dɑːk griːn/", "type": "adj", "meaning": "xanh lá cây đậm" },
+    { "word": "Light Blue", "phonetic": "/laɪt bluː/", "type": "adj", "meaning": "xanh nhạt" },
+    { "word": "Navy", "phonetic": "/ˈneɪ.vi/", "type": "adj", "meaning": "xanh da trời đậm" }
+  ],
+  "artVocabulary": [
+    { "word": "Applaud", "phonetic": "/əˈplɔd/", "type": "verb", "meaning": "vỗ tay, tán thưởng" },
+    { "word": "Art", "phonetic": "/ɑrt/", "type": "noun", "meaning": "nghệ thuật" },
+    { "word": "Artist", "phonetic": "/ˈɑrtɪst/", "type": "noun", "meaning": "nghệ sĩ" },
+    { "word": "Artwork", "phonetic": "/ˈɑrˌtwɜrk/", "type": "noun", "meaning": "tác phẩm nghệ thuật" },
+    { "word": "Audience", "phonetic": "/ˈɔdiəns/", "type": "noun", "meaning": "khán giả" },
+    { "word": "Author", "phonetic": "/ˈɔθər/", "type": "noun", "meaning": "tác giả" },
+    { "word": "Band", "phonetic": "/bænd/", "type": "noun", "meaning": "ban nhạc" },
+    { "word": "Brush", "phonetic": "/brʌʃ/", "type": "noun", "meaning": "cọ vẽ" },
+    { "word": "Camera", "phonetic": "/ˈkæmrə/", "type": "noun", "meaning": "máy ảnh" },
+    { "word": "Canvas", "phonetic": "/ˈkænvəs/", "type": "noun", "meaning": "tấm vải vẽ tranh sơn dầu" },
+    { "word": "Choir", "phonetic": "/ˈkwaɪər/", "type": "noun", "meaning": "dàn hợp xướng" },
+    { "word": "Clap", "phonetic": "/klæp/", "type": "verb", "meaning": "vỗ tay" },
+    { "word": "Collection", "phonetic": "/kəˈlɛkʃən/", "type": "noun", "meaning": "bộ sưu tập" },
+    { "word": "Composer", "phonetic": "/kəmˈpoʊzər/", "type": "noun", "meaning": "nhà soạn nhạc" },
+    { "word": "Concert", "phonetic": "/kənˈsɜrt/", "type": "noun", "meaning": "buổi trình diễn âm nhạc" },
+    { "word": "Creative", "phonetic": "/kriˈeɪtɪv/", "type": "adj", "meaning": "tính sáng tạo" },
+    { "word": "Culture", "phonetic": "/ˈkʌlʧər/", "type": "noun", "meaning": "văn hóa" },
+    { "word": "Design", "phonetic": "/dɪˈzaɪn/", "type": "verb", "meaning": "thiết kế" },
+    { "word": "Drawing", "phonetic": "/ˈdrɔɪŋ/", "type": "noun", "meaning": "bức tranh vẽ" },
+    { "word": "Exhibition", "phonetic": "/ˌɛksəˈbɪʃən/", "type": "noun", "meaning": "Triển lãm" },
+    { "word": "Film", "phonetic": "/fɪlm/", "type": "noun", "meaning": "bộ phim" },
+    { "word": "Gallery", "phonetic": "/ˈgæləri/", "type": "noun", "meaning": "phòng trưng bày, triển lãm" },
+    { "word": "Illustration", "phonetic": "/ˌɪləˈstreɪʃən/", "type": "noun", "meaning": "hình minh họa" },
+    { "word": "Image", "phonetic": "/ˈɪmɪʤ/", "type": "noun", "meaning": "bức ảnh" },
+    { "word": "Inspiration", "phonetic": "/ˌɪnspəˈreɪʃən/", "type": "noun", "meaning": "nguồn cảm hứng" },
+    { "word": "Inspire", "phonetic": "/ɪnˈspaɪr/", "type": "verb", "meaning": "truyền cảm hứng" },
+    { "word": "Model", "phonetic": "/ˈmɑdəl/", "type": "noun", "meaning": "người mẫu" },
+    { "word": "Movie", "phonetic": "/ˈmuvi/", "type": "noun", "meaning": "bộ phim" },
+    { "word": "Music", "phonetic": "/ˈmjuzɪk/", "type": "noun", "meaning": "âm nhạc" },
+    { "word": "Novel", "phonetic": "/ˈnɑvəl/", "type": "noun", "meaning": "tiểu thuyết" },
+    { "word": "Performance", "phonetic": "/pərˈfɔrməns/", "type": "noun", "meaning": "phần trình diễn, tiết mục" },
+    { "word": "Photo", "phonetic": "/ˈfoʊˌtoʊ/", "type": "noun", "meaning": "bức ảnh" },
+    { "word": "Photographer", "phonetic": "/fəˈtɑgrəfər/", "type": "noun", "meaning": "nhiếp ảnh gia" },
+    { "word": "Poem", "phonetic": "/ˈpoʊəm/", "type": "noun", "meaning": "bài thơ" },
+    { "word": "Poet", "phonetic": "/ˈpoʊət/", "type": "noun", "meaning": "nhà thơ, thi sĩ" },
+    { "word": "Portrait", "phonetic": "/ˈpɔrtrət/", "type": "noun", "meaning": "tranh chân dung" },
+    { "word": "Show", "phonetic": "/ʃoʊ/", "type": "noun", "meaning": "buổi biểu diễn" },
+    { "word": "Singer", "phonetic": "/ˈsɪŋər/", "type": "noun", "meaning": "ca sĩ" },
+    { "word": "Sketch", "phonetic": "/skɛʧ/", "type": "noun", "meaning": "bản thảo, bản nháp" },
+    { "word": "Studio", "phonetic": "/ˈstudiˌoʊ/", "type": "noun", "meaning": "xưởng (vẽ, chụp ảnh, làm nhạc, làm phim…)" },
+    { "word": "Video", "phonetic": "/ˈvɪdioʊ/", "type": "noun", "meaning": "đoạn phim" }
+  ],
+  "businessVocabulary": [
+    { "word": "Company", "phonetic": "/ˈkʌmpəni/", "type": "noun", "meaning": "Công ty" },
+    { "word": "Enterprise", "phonetic": "/ˈentəpraɪz/", "type": "noun", "meaning": "Tổ chức kinh doanh, xí nghiệp, hãng" },
+    { "word": "Corporation", "phonetic": "/kɔːpəˈreɪʃn/", "type": "noun", "meaning": "Tập đoàn" },
+    { "word": "Holding company", "phonetic": "/ˈhəʊldɪŋ ˈkʌmpəni/", "type": "noun", "meaning": "Công ty mẹ" },
+    { "word": "Subsidiary", "phonetic": "/səbˈsɪdiəri/", "type": "noun", "meaning": "Công ty con" },
+    { "word": "Affiliate", "phonetic": "/əˈfɪlieɪt/", "type": "noun", "meaning": "Công ty liên kết" },
+    { "word": "State-owned enterprise", "phonetic": "/steɪt əʊn ˈentəpraɪz/", "type": "noun", "meaning": "Công ty nhà nước" },
+    { "word": "Private company", "phonetic": "/ˈpraɪvət ˈkʌmpəni/", "type": "noun", "meaning": "Công ty tư nhân" },
+    { "word": "Partnership", "phonetic": "/ˈpɑːtnəʃɪp/", "type": "noun", "meaning": "Công ty hợp doanh" },
+    { "word": "Joint venture company", "phonetic": "/ˌdʒɔɪnt ˈventʃə(r)/", "type": "noun", "meaning": "Công ty liên doanh" },
+    { "word": "Limited company (Ltd)", "phonetic": "/ˌlɪmɪtɪd ˈkʌmpəni/", "type": "noun", "meaning": "Công ty trách nhiệm hữu hạn" },
+    { "word": "Joint stock company (JSC)", "phonetic": "/ˌdʒɔɪnt ˈstɒk kʌmpəni/", "type": "noun", "meaning": "Công ty cổ phần" },
+    { "word": "Marketing Department", "phonetic": "/‘ma:kitiη dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Marketing, phòng tiếp thị" },
+    { "word": "Sales Department", "phonetic": "/seil dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Kinh doanh" },
+    { "word": "Public Relations Department", "phonetic": "/ˌpʌb.lɪk rɪˈleɪ.ʃənz dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Quan hệ công chúng" },
+    { "word": "Administration Department", "phonetic": "/ədˌmɪn.əˈstreɪ.ʃən dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Hành chính" },
+    { "word": "Human Resource Department", "phonetic": "/‘hju:mən ri’sɔ:s dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Nhân sự" },
+    { "word": "Training Department", "phonetic": "/‘treiniη dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Đào tạo" },
+    { "word": "Accounting Department", "phonetic": "/ə’kauntiη dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Kế toán" },
+    { "word": "Treasury Department", "phonetic": "/‘treʒəri dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Ngân quỹ" },
+    { "word": "International Relations Department", "phonetic": "/,intə’næ∫ənl rɪ.ˈleɪ.ʃən dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Quan hệ quốc tế" },
+    { "word": "Local Payment Department", "phonetic": "/ˈloʊ.kəl ˈpeɪ.mənt dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Thanh toán trong nước" },
+    { "word": "International Payment Department", "phonetic": "/,intə’næ∫ənl ˈpeɪ.mənt dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Thanh toán quốc tế" },
+    { "word": "Information Technology Department", "phonetic": "/,infə’mei∫n tek’nɔlədʒi dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Công nghệ thông tin" },
+    { "word": "Customer Service Department", "phonetic": "/‘kʌstəmə ‘sə:vis dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Chăm sóc khách hàng" },
+    { "word": "Audit Department", "phonetic": "/‘ɔ:dit dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Kiểm toán" },
+    { "word": "Product Development Department", "phonetic": "/‘prɔdəkt di’veləpmənt dɪˈpɑːrt.mənt/", "type": "noun", "meaning": "Phòng Nghiên cứu và phát triển sản phẩm" }
+  ],
+  "computerVocabulary": [
+    { "word": "Access", "phonetic": "/ˈækˌsɛs/", "type": "noun", "meaning": "sự truy cập" },
+    { "word": "Application", "phonetic": "/ˌæpləˈkeɪʃən/", "type": "noun", "meaning": "ứng dụng trên điện thoại di động, máy tính bảng" },
+    { "word": "Blog", "phonetic": "/blɔg/", "type": "noun", "meaning": "nhật ký trực tuyến" },
+    { "word": "Browser", "phonetic": "/ˈbraʊzər/", "type": "noun", "meaning": "trình duyệt" },
+    { "word": "Click", "phonetic": "/klɪk/", "type": "noun", "meaning": "nhấp chuột" },
+    { "word": "Computer", "phonetic": "/kəmˈpjutər/", "type": "noun", "meaning": "máy tính để bàn" },
+    { "word": "Connection", "phonetic": "/kəˈnɛkʃən/", "type": "noun", "meaning": "kết nối" },
+    { "word": "Data", "phonetic": "/ˈdeɪtə/", "type": "noun", "meaning": "dữ liệu" },
+    { "word": "Delete", "phonetic": "/dɪˈlit/", "type": "verb", "meaning": "xóa bỏ" },
+    { "word": "Download", "phonetic": "/ˈdaʊnˌloʊd/", "type": "verb", "meaning": "tải về, tải xuống" },
+    { "word": "Ebook", "phonetic": "/i-bʊk/", "type": "noun", "meaning": "sách điện tử" },
+    { "word": "Email", "phonetic": "/i-meɪl/", "type": "noun", "meaning": "thư điện tử" },
+    { "word": "Error", "phonetic": "/ˈɛrər/", "type": "noun", "meaning": "lỗi" },
+    { "word": "File", "phonetic": "/faɪl/", "type": "noun", "meaning": "tập tin" },
+    { "word": "Folder", "phonetic": "/ˈfoʊldər/", "type": "noun", "meaning": "thư mục" },
+    { "word": "Hardware", "phonetic": "/ˈhɑrˌdwɛr/", "type": "noun", "meaning": "phần cứng" },
+    { "word": "Headphone", "phonetic": "/ˈhɛdˌfoʊn/", "type": "noun", "meaning": "tai nghe" },
+    { "word": "Install", "phonetic": "/ɪnˈstɔl/", "type": "noun", "meaning": "cài đặt, lắp đặt" },
+    { "word": "Internet", "phonetic": "/ˈɪntərˌnɛt/", "type": "noun", "meaning": "mạng internet" },
+    { "word": "Keyboard", "phonetic": "/ˈkiˌbɔrd/", "type": "noun", "meaning": "bàn phím máy tính" },
+    { "word": "Laptop", "phonetic": "/ˈlæpˌtɑp/", "type": "noun", "meaning": "máy tính xách tay" },
+    { "word": "Link", "phonetic": "/lɪŋk/", "type": "noun", "meaning": "đường dẫn" },
+    { "word": "Log in", "phonetic": "/lɔg ɪn/", "type": "noun", "meaning": "đăng nhập" },
+    { "word": "Mouse", "phonetic": "/maʊs/", "type": "noun", "meaning": "chuột máy tính" },
+    { "word": "Password", "phonetic": "/ˈpæˌswɜrd/", "type": "noun", "meaning": "mật khẩu" },
+    { "word": "Program", "phonetic": "/ˈproʊˌgræm/", "type": "noun", "meaning": "chương trình máy tính" },
+    { "word": "Sign up", "phonetic": "/saɪn ʌp/", "type": "noun", "meaning": "đăng ký" },
+    { "word": "Smartphone", "phonetic": "/smärtˌfōn/", "type": "noun", "meaning": "điện thoại thông minh" },
+    { "word": "Social network", "phonetic": "/ˈsoʊʃəl ˈnɛˌtwɜrk/", "type": "noun", "meaning": "mạng xã hội" },
+    { "word": "Software", "phonetic": "/ˈsɔfˌtwɛr/", "type": "noun", "meaning": "phần mềm" },
+    { "word": "Speaker", "phonetic": "/ˈspikər/", "type": "noun", "meaning": "loa" },
+    { "word": "Surf", "phonetic": "/sɜrf/", "type": "verb", "meaning": "lướt (web)" },
+    { "word": "System", "phonetic": "/ˈsɪstəm/", "type": "noun", "meaning": "hệ thống" },
+    { "word": "Tablet", "phonetic": "/ˈtæblət/", "type": "noun", "meaning": "máy tính bảng" },
+    { "word": "Virus", "phonetic": "/ˈvaɪrəs/", "type": "noun", "meaning": "vi rút" },
+    { "word": "Wifi", "phonetic": "/Wīfī/", "type": "noun", "meaning": "mạng wifi" },
+    { "word": "Wireless", "phonetic": "/ˈwaɪrlɪs/", "type": "adj", "meaning": "không dây" }
+  ],
+  "phoneVocabulary": [
+    { "word": "Answer", "phonetic": "/ˈænsər/", "type": "verb", "meaning": "trả lời" },
+    { "word": "Call", "phonetic": "/kɔl/", "type": "verb", "meaning": "gọi điện thoại" },
+    { "word": "Cellphone", "phonetic": "/ˈsɛlfoʊn/", "type": "noun", "meaning": "điện thoại di động" },
+    { "word": "Communicate", "phonetic": "/kəmˈjunəˌkeɪt/", "type": "verb", "meaning": "giao tiếp" },
+    { "word": "Contact", "phonetic": "/ˈkɑnˌtækt/", "type": "verb", "meaning": "liên hệ; (n) địa chỉ liên hệ" },
+    { "word": "Hotline", "phonetic": "/ˈhɑtˌlaɪn/", "type": "noun", "meaning": "đường dây nóng" },
+    { "word": "Message", "phonetic": "/ˈmɛsəʤ/", "type": "noun", "meaning": "tin nhắn" },
+    { "word": "Missed", "phonetic": "/mɪst/", "type": "verb", "meaning": "lỡ, nhỡ" },
+    { "word": "Phone number", "phonetic": "/foʊn ˈnʌmbər/", "type": "noun", "meaning": "số điện thoại" },
+    { "word": "Receive", "phonetic": "/rəˈsiv/", "type": "verb", "meaning": "nhận được" },
+    { "word": "Send", "phonetic": "/sɛnd/", "type": "verb", "meaning": "gửi đi" },
+    { "word": "Signature", "phonetic": "/ˈsɪgnəʧər/", "type": "noun", "meaning": "chữ ký" },
+    { "word": "Stamp", "phonetic": "/stæmp/", "type": "noun", "meaning": "tem" },
+    { "word": "Text", "phonetic": "/tɛkst/", "type": "verb", "meaning": "nhắn tin; tin nhắn (n)" }
+  ],
+  "tvNewsVocabulary": [
+    { "word": "Advertisement", "phonetic": "/ˌædvərˈtaɪzmənt/", "type": "noun", "meaning": "quảng cáo" },
+    { "word": "Article", "phonetic": "/ˈɑrtɪkəl/", "type": "noun", "meaning": "bài báo" },
+    { "word": "Broadcast", "phonetic": "/ˈbrɔdˌkæst/", "type": "verb", "meaning": "phát sóng; (n) chương trình phát sóng" },
+    { "word": "Cable", "phonetic": "/ˈkeɪbəl/", "type": "noun", "meaning": "dây cáp, truyền hình cáp" },
+    { "word": "Channel", "phonetic": "/ˈʧænəl/", "type": "noun", "meaning": "kênh truyền hình" },
+    { "word": "Character", "phonetic": "/ˈkɛrɪktər/", "type": "noun", "meaning": "nhân vật" },
+    { "word": "Column", "phonetic": "/ˈkɑləm/", "type": "noun", "meaning": "chuyên mục" },
+    { "word": "Commercial", "phonetic": "/kəˈmɜrʃəl/", "type": "noun", "meaning": "quảng cáo" },
+    { "word": "Daily", "phonetic": "/ˈdeɪli/", "type": "noun", "meaning": "hằng ngày" },
+    { "word": "Editor", "phonetic": "/ˈɛdətər/", "type": "noun", "meaning": "biên tập viên" },
+    { "word": "Episode", "phonetic": "/ˈɛpəˌsoʊd/", "type": "noun", "meaning": "phần, tập (phim, chương trình)" },
+    { "word": "Headline", "phonetic": "/ˈhɛˌdlaɪn/", "type": "noun", "meaning": "tiêu đề" },
+    { "word": "Issue", "phonetic": "/ˈɪʃu/", "type": "noun", "meaning": "số, kỳ phát hành" },
+    { "word": "Live", "phonetic": "/lɪv/", "type": "noun", "meaning": "truyền hình trực tiếp" },
+    { "word": "Magazine", "phonetic": "/ˈmægəˌzin/", "type": "noun", "meaning": "tạp chí" },
+    { "word": "Newspaper", "phonetic": "/ˈnuzˌpeɪpər/", "type": "noun", "meaning": "báo giấy" },
+    { "word": "Publisher", "phonetic": "/ˈpʌblɪʃər/", "type": "noun", "meaning": "nhà xuất bản" },
+    { "word": "Reporter", "phonetic": "/rɪˈpɔrtər/", "type": "noun", "meaning": "phóng viên" },
+    { "word": "Script", "phonetic": "/skrɪpt/", "type": "noun", "meaning": "kịch bản" },
+    { "word": "Subtitle", "phonetic": "/ˈsʌbˌtaɪtəl/", "type": "noun", "meaning": "phụ đề" }
+  ]
+}
+  
