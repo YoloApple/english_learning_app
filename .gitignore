@@ -6,7 +6,6 @@ flutter_app/.vscode/
 flutter_app/.flutter-plugins
 flutter_app/.flutter-plugins-dependencies
 flutter_app/lib/firebase_options.dart
-
 # Node.js modules
 backend/node_modules/
 backend/.env

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../components/custom_calendar.dart';
+import 'conversation_message_screen.dart';
 import 'falshcard_screen.dart'; // Màn hình Flashcard của bạn
 
 class StudyDashboard extends StatefulWidget {
@@ -106,7 +107,67 @@ class _StudyDashboardState extends State<StudyDashboard> {
                           ),
                         ),
                       );
-                    } else {
+                    }else if (skill["name"] == "Conversation") {
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => ConversationMessageScreen()),
+                          );
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(16),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.shade300,
+                                blurRadius: 8,
+                                spreadRadius: 1,
+                                offset: const Offset(0, 4),
+                              ),
+                            ],
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.blue.shade50,
+                                radius: 22,
+                                child: Icon(skill["icon"], color: Colors.blue, size: 24),
+                              ),
+                              const SizedBox(height: 8),
+                              Text(
+                                skill["name"],
+                                style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "${skill["progress"]}%",
+                                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(height: 6),
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+                                decoration: BoxDecoration(
+                                  color: skill["progress"] == 100 ? Colors.orange : Colors.orange[100],
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Text(
+                                  skill["status"],
+                                  style: TextStyle(
+                                    color: skill["progress"] == 100 ? Colors.white : Colors.orange,
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    }
+                    else {
                       // Các skill khác giữ nguyên giao diện ban đầu
                       return Container(
                         padding: const EdgeInsets.all(12),
