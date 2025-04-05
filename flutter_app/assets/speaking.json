@@ -1,0 +1,250 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "name": "Talk about your daily routine",
+      "english": "Talk about your daily routine",
+      "vietnamese": "Kể về việc làm hàng ngày của bạn",
+      "content": {
+        "english": "My day starts at 6 am. I wake up, clean my pillow, brush my teeth, and wash my face. After that, I spend about 20 minutes doing Yoga. At 6:30 am, I prepare and enjoy breakfast until 6:45 am. After that, I take a shower and get ready to go to work. I work from 8 am to 5:30 pm. I have 1.5 hours for lunch and taking a nap. At 6 pm, I got home. I changed clothes, showered, cooked dinner, and ate while watching the news. From 8 p.m. to 10 p.m, I work part-time. Then I take skincare and go to bed at 10:30 pm. Although my time is very busy, I am very satisfied with it.",
+        "vietnamese": "Một ngày của tôi bắt đầu từ 6 giờ sáng. Tôi thức dậy, dọn dẹp chăn gối, đánh răng, rửa mặt. Sau đó, tôi dành khoảng 20 phút để tập Yoga. 6:30 sáng, tôi chuẩn bị và thưởng thức bữa sáng cho đến 6:45 sáng. Sau đó, tôi đi tắm và chuẩn bị đi làm. Tôi làm việc từ 8 giờ sáng đến 5 giờ 30 chiều. Tôi có 1,5 giờ để ăn trưa và ngủ trưa. 6 giờ chiều, tôi về đến nhà. Tôi thay quần áo, tắm rửa, nấu bữa tối và vừa ăn vừa xem tin tức. Từ 8 giờ tối đến 10 giờ tối, tôi làm việc bán thời gian. Sau đó, tôi chăm sóc da và đi ngủ lúc 10:30 tối. Mặc dù thời gian của tôi rất bận rộn nhưng tôi rất hài lòng với nó."
+      }
+    },
+    {
+      "id": 2,
+      "name": "Talk about your trip with someone",
+      "english": "Talk about your trip with someone",
+      "vietnamese": "Kể về chuyện du lịch của bạn với một ai đó",
+      "content": {
+        "english": "A few months ago my boyfriend and I visited Can Tho, one of the most famous cities in Vietnam. Can Tho is extremely beautiful and peace city. It is well known for its centres of business and other activities. There are many nice foods such as the blood cockle porridge, Công Cake,... In particular, Can Tho is famous for its floating market, Ninh Kieu wharf , Hau River Park and Can Tho University. Can Tho people are extremely friendly and kind. This is my boyfriend's hometown, he takes me around and eats all kinds of delicious food. He told me about the days he was young, the roads he traveled, and the memories he keeps until now. This is my most exciting trip because it is not only a trip to a new land but also a trip to discover the childhood of the person I love.",
+        "vietnamese": "Cách đây vài tháng tôi và bạn trai đến thăm Cần Thơ, một trong những thành phố nổi tiếng nhất Việt Nam. Cần Thơ là thành phố vô cùng xinh đẹp và yên bình. Nó nổi tiếng với các trung tâm kinh doanh và các hoạt động khác. Có rất nhiều món ăn ngon như cháo sò huyết, bánh Cống, ... Đặc biệt, Cần Thơ nổi tiếng với chợ nổi, bến Ninh Kiều, công viên sông Hậu và trường đại học Cần Thơ. Con người Cần Thơ vô cùng thân thiện và tốt bụng. Đây là quê của bạn trai tôi, anh ấy đưa tôi đi khắp nơi và ăn đủ thứ đồ ăn ngon. Anh ấy kể cho tôi nghe về những ngày anh ấy còn trẻ, những con đường anh ấy đã đi và những kỉ niệm mà anh ấy lưu giữ cho đến tận bây giờ. Đây là chuyến đi thú vị nhất của tôi vì nó không chỉ là chuyến đi đến một vùng đất mới mà còn là chuyến khám phá tuổi thơ của người mà mình yêu."
+      }
+    },
+    {
+      "id": 3,
+      "name": "How do you spend your weekends?",
+      "english": "How do you spend your weekends?",
+      "vietnamese": "Bạn thường làm gì vào cuối tuần?",
+      "content": {
+        "english": "On weekends, I often spend time on my family in the countryside. On Saturday evenings, I often go watch films and drink coffee with my parent. If I don’t watch films, I will eat dinner and talk about something with my family and go to bed very late. On Sunday morning, I also get up late to relax because my busy work from Monday through morning Saturday always makes me tired. Besides, at weekends, my family will usually take a trip near my house to enjoy delicious food and relax. On Sunday evening, I prepare to come back to my room in the city and do nothing but listen to music and write a diary. I am always happy and pleased with the weekends I have enjoyed so far.",
+        "vietnamese": "Cuối tuần, tôi thường dành thời gian cho gia đình ở quê. Vào tối thứ bảy, tôi thường đi xem phim và uống cà phê với bố mẹ. Nếu không xem phim, tôi sẽ ăn tối và nói chuyện gì đó với gia đình và đi ngủ rất muộn. Sáng chủ nhật, tôi cũng dậy muộn để thư giãn vì công việc bận rộn từ thứ hai đến sáng thứ bảy luôn khiến tôi mệt mỏi. Ngoài ra, cuối tuần, gia đình tôi sẽ thường đi du lịch gần nhà để thưởng thức những món ăn ngon và thư giãn. Vào tối Chủ nhật, tôi chuẩn bị trở về phòng của mình trong thành phố và không làm gì khác ngoài việc nghe nhạc và viết nhật ký. Tôi luôn hạnh phúc và hài lòng với những ngày cuối tuần mà tôi đã tận hưởng cho đến nay."
+      }
+    },
+    {
+      "id": 4,
+      "name": "Talk about an experience that you never forget",
+      "english": "Talk about an experience that you never forget",
+      "vietnamese": "Kể về 1 trải nghiệm mà bạn không bao giờ quên",
+      "content": {
+        "english": "I will never forget the moment I received my college acceptance letter. On the day the school released the benchmarks and I knew I passed. My first feeling was nervous, happy, and bursting with happiness right after. My whole family is happy for me, they are extremely satisfied. Although I don't say it, I know that my parents are very happy and proud of me. At that point, I knew I had stepped one foot on the threshold of adulthood. I feel very grateful to myself for constantly working hard and trying every day to achieve the best results. It was the sweetest experience that I will never forget in my whole life.",
+        "vietnamese": "Tôi sẽ không bao giờ quên khoảnh khắc tôi nhận được thư chấp nhận đại học của mình. Vào ngày trường công bố điểm chuẩn và tôi biết mình đã đậu. Cảm giác đầu tiên của tôi là hồi hộp, vui sướng và vỡ òa hạnh phúc ngay sau đó. Cả gia đình tôi mừng cho tôi, họ mãn nguyện vô cùng. Dù không nói ra nhưng tôi biết rằng bố mẹ rất vui và tự hào về mình. Lúc đó, tôi biết mình đã bước một chân lên ngưỡng cửa của sự trưởng thành. Tôi cảm thấy rất biết ơn bản thân vì đã không ngừng nỗ lực và cố gắng mỗi ngày để đạt được kết quả tốt nhất. Đó là trải nghiệm ngọt ngào nhất mà tôi sẽ không bao giờ quên trong suốt cuộc đời mình."
+      }
+    },
+    {
+      "id": 5,
+      "name": "What are your hobbies?",
+      "english": "What are your hobbies?",
+      "vietnamese": "Những sở thích của bạn là gì?",
+      "content": {
+        "english": "I have a hobby of finding a peaceful place to read books. Reading books not only relaxes me but also broadens my knowledge on a variety of topics. I enjoy every word that the author writes and reflect on my worth in life. Books are like a precious medicine to heal my soul when I am under pressure. I read many different kinds of books, not in any one category. Because I like to exploit knowledge and blend in with the colors of life. Simply put, books can take me far and also pull me back to myself. Books are an extremely important and indispensable part of my life.",
+        "vietnamese": "Tôi có sở thích tìm một nơi yên bình để đọc sách. Đọc sách không chỉ giúp tôi thư giãn mà còn mở mang kiến thức về nhiều chủ đề khác nhau. Tôi tận hưởng từng câu chữ mà tác giả viết ra và suy ngẫm về giá trị của tôi trong cuộc sống. Sách giống như một liều thuốc quý chữa lành tâm hồn tôi khi tôi gặp áp lực. Tôi đọc nhiều loại sách khác nhau, không thuộc một thể loại nào. Vì tôi thích khai thác kiến thức và hòa mình vào những sắc màu của cuộc sống. Nói một cách đơn giản, sách có thể đưa tôi đi xa và cũng có thể kéo tôi trở lại với chính mình. Sách là một phần vô cùng quan trọng và không thể thiếu trong cuộc sống của tôi."
+      }
+    },
+    {
+      "id": 6,
+      "name": "Do you like shopping? What do you usually buy?",
+      "english": "Do you like shopping? What do you usually buy?",
+      "vietnamese": "Bạn có thích mua sắm không? Bạn thường mua những gì?",
+      "content": {
+        "english": "I am not a shopaholic. I just want to buy the necessary things, and not spend too much time on this work. Sometimes, my mom, sister, or friends will ask me to go shopping with them, but I usually refuse for any reason I can think of. I love simplicity, so I don't have too many accessories or clothes, just some basic things that can be worn to many different places. I think shopping is a fun experience, but not for me.",
+        "vietnamese": "Tôi không phải là một người nghiện mua sắm. Tôi chỉ muốn mua những thứ cần thiết, và không dành quá nhiều thời gian cho công việc này. Đôi khi, mẹ, chị gái hoặc bạn bè của tôi sẽ rủ tôi đi mua sắm với họ, nhưng tôi thường từ chối vì bất kỳ lý do gì tôi có thể nghĩ ra. Tôi yêu thích sự đơn giản, vì vậy tôi không có quá nhiều phụ kiện hay quần áo, chỉ cần một số thứ cơ bản có thể mặc đến nhiều nơi khác nhau. Tôi nghĩ mua sắm là một trải nghiệm thú vị, nhưng với tôi thì không."
+      }
+    },
+    {
+      "id": 7,
+      "name": "What kind of pets do you like best? Why?",
+      "english": "What kind of pets do you like best? Why?",
+      "vietnamese": "Bạn thích động vật nào nhất? Tại sao?",
+      "content": {
+        "english": "Of all the pets, my favorite is cats for the following reasons. First, the cat is very cute. There are many cats with beautiful fur. Their faces are often very expressive and luxurious. Especially British cats. The body is moderate, but the coat is very thick, and smooth and often makes people think that it is very fat. Second, cats like to lie quietly in their owners' arms. Cats are truly soul healers. Finally, having a cat in the house, the rats won't dare to eat clumsy, convenient right? It is for these reasons that I like to have cats the most.",
+        "vietnamese": "Trong tất cả các vật nuôi, tôi yêu thích nhất là mèo vì những lý do sau. Đầu tiên, con mèo rất dễ thương. Có rất nhiều con mèo với bộ lông đẹp. Khuôn mặt của họ thường rất biểu cảm và sang trọng. Đặc biệt là mèo Anh. Thân hình vừa phải nhưng bộ lông rất dày, mịn và thường khiến người ta nghĩ rằng nó rất béo. Thứ hai, mèo thích nằm yên tĩnh trong vòng tay của chủ nhân. Mèo thực sự là những người chữa lành tâm hồn. Cuối cùng, có mèo trong nhà, lũ chuột sẽ không dám ăn vụng, thật tiện lợi phải không? Chính vì những lý do này mà tôi thích nuôi mèo nhất."
+      }
+    },
+    {
+      "id": 8,
+      "name": "Which seasons do you prefer in the South of Vietnam? Why?",
+      "english": "Which seasons do you prefer in the South of Vietnam? Why?",
+      "vietnamese": "Bạn thích mùa nào ở miền Nam Việt Nam? Tại sao?",
+      "content": {
+        "english": "I live in Ho Chi Minh City, South Vietnam. There are only 2 seasons here, the hot season and the rainy season. In the hot season, it is extremely hot and uncomfortable, but in the rainy season, there are often showers and floods. If you ask me which season I like the most, my answer is summer. Although it is hot, life will not be much inconvenience, everyone will go to work easily and without difficulty. I hate heavy rains that flood everywhere, block traffic, and people can't do business. The most pleasant season in Ho Chi Minh is the period from autumn to winter around the end of September and the beginning of October. This is the time when the weather is the most gentle, with not much sunshine but not rain to cause flooding.",
+        "vietnamese": "Tôi sống ở thành phố Hồ Chí Minh, miền Nam Việt Nam. Ở đây chỉ có 2 mùa là mùa nóng và mùa mưa. Vào mùa nắng nóng thì vô cùng oi bức, khó chịu nhưng đến mùa mưa thì thường xuyên có mưa rào và lũ lụt. Nếu bạn hỏi tôi thích mùa nào nhất, câu trả lời của tôi là mùa hè. Tuy trời nắng nóng nhưng cuộc sống sẽ không có nhiều bất tiện, mọi người đều đi làm dễ dàng, không gặp khó khăn. Tôi ghét những trận mưa lớn làm ngập lụt khắp nơi, làm tắc nghẽn giao thông, mọi người không thể làm ăn được. Hồ Chí Minh mùa dễ chịu nhất là khoảng thời gian từ thu sang đông vào khoảng cuối tháng 9 đầu tháng 10. Đây là thời điểm thời tiết ôn hòa nhất, nắng không nhiều nhưng không mưa gây ngập úng."
+      }
+    },
+    {
+      "id": 9,
+      "name": "What’s your favorite means of transportation? Why?",
+      "english": "What’s your favorite means of transportation? Why?",
+      "vietnamese": "Phương tiện giao thông yêu thích của bạn là gì? Tại sao?",
+      "content": {
+        "english": "My favorite means of transport is the bus. I prefer going by bus for the following reasons. This is public transport, many people can take the same bus to the place they want. If you take a bus, the environment will be less polluted due to fewer emissions into the environment. Sitting on the bus, I don't have to jostle down the lane full of motorbikes and dust. Or in the rainy season, I won't have to wade through the water or worry about the car stalling. In addition to the disadvantage that taking the bus takes time to get to the station, misses the bus, or has to walk a bit more to get to the place you want, the bus is a great means of transport. I hope in the future people can take the bus more so that the traffic situation is better than now, fewer accidents, no more traffic jams.",
+        "vietnamese": "Phương tiện giao thông yêu thích của tôi là xe buýt. Tôi thích đi bằng xe buýt vì những lý do sau đây. Đây là phương tiện công cộng, nhiều người có thể đi chung một chuyến xe buýt đến nơi mình muốn. Nếu bạn đi xe buýt, môi trường sẽ bớt ô nhiễm hơn do lượng khí thải ra môi trường ít hơn. Ngồi trên xe buýt, tôi không phải chen lấn xuống làn đường đầy xe máy và khói bụi. Hoặc vào mùa mưa, tôi sẽ không phải lội nước hay lo xe bị chết máy. Ngoài nhược điểm là đi xe buýt mất thời gian đến bến, lỡ xe, hoặc phải đi bộ thêm một đoạn mới đến nơi mình muốn thì xe buýt là một phương tiện giao thông tuyệt vời. Tôi hy vọng trong tương lai mọi người có thể đi xe buýt nhiều hơn để tình hình giao thông tốt hơn bây giờ, ít tai nạn hơn, không còn kẹt xe."
+      }
+    },
+    {
+      "id": 10,
+      "name": "How to keep healthy?",
+      "english": "How to keep healthy?",
+      "vietnamese": "Làm thế nào để luôn khỏe mạnh?",
+      "content": {
+        "english": "How to stay healthy? First, we should eat food with the right nutritional content such as meat, eggs, and vegetables. Do not eat too much or too little, all of which affect health. Second, we should drink a lot of water, especially filtered water, and supplement nutritious drinks such as milk, fruit juice.... should not drink too much milk tea. Moreover, we should exercise in the morning or evening regularly and properly to reduce unnecessary fat content from the body, enhance resistance, and make the organs in the body work properly and more resilient. In particular, we need to pay attention to mental health, if the mind is comfortable without stress, then it is called real health. In the end, we should help to enjoy happiness and the meaning of life.",
+        "vietnamese": "Làm thế nào để giữ sức khỏe luôn tốt?. Đầu tiên, chúng ta nên ăn thức ăn với hàm lượng dinh dưỡng phù hợp như thịt, trứng, rau. Không nên ăn quá nhiều hoặc quá ít, tất cả đều gây ảnh hưởng đến sức khỏe. Thứ hai, chúng ta nên uống nhiều nước, đặc biệt là nước lọc và bổ sung đồ uống bổ dưỡng như sữa, nước ép trái cây.... không nên uống quá nhiều trà sữa. Hơn nữa, chúng ta nên tập thể dục buổi sáng hoặc buổi tối thường xuyên và đúng cách để giảm hàm lượng chất béo không cần thiết ra khỏi cơ thể, tăng cường sức đề kháng, khiến các cơ quan trong cơ thể hoạt động tốt và dẻo dai hơn. Đặc biệt, chúng ta cần quan tâm đến sức khở tinh thần, nếu tinh thần thoải mái không căng thẳng thì mới gọi là khỏe mạnh thật sự. Cuối cùng, chúng ta nên giúp đỡ để tận hưởng hạnh phúc và ý nghĩa của cuộc sống."
+      }
+    }
+  ],
+  "conversations": [
+    {
+      "id": 1,
+      "topic_id": 1,
+      "english": "Where’s the fitting room?",
+      "vietnamese": "Phòng thử đồ ở đâu vậy?"
+    },
+    {
+      "id": 2,
+      "topic_id": 1,
+      "english": "I want to take this one.",
+      "vietnamese": "Tôi muốn mua sản phẩm này."
+    },
+    {
+      "id": 3,
+      "topic_id": 1,
+      "english": "How would you like to pay?",
+      "vietnamese": "Bạn muốn thực hiện thanh toán thế nào?"
+    },
+    {
+      "id": 4,
+      "topic_id": 1,
+      "english": "Can I pay by cash or card?",
+      "vietnamese": "Tôi có thể trả bằng tiền mặt hay thẻ được không?"
+    },
+    {
+      "id": 5,
+      "topic_id": 1,
+      "english": "Would you like a receipt?",
+      "vietnamese": "Bạn có cần xuất hóa đơn không?"
+    },
+    {
+      "id": 6,
+      "topic_id": 1,
+      "english": "I’d like to ask some questions about the product, please!",
+      "vietnamese": "Tôi muốn hỏi một chút về sản phẩm này được chứ!"
+    },
+    {
+      "id": 7,
+      "topic_id": 1,
+      "english": "Is it on sale?",
+      "vietnamese": "Cái này có phải đang giảm giá không?"
+    },
+    {
+      "id": 8,
+      "topic_id": 1,
+      "english": "Sorry, it is out of stock.",
+      "vietnamese": "Xin lỗi, cái này đã hết hàng rồi ạ."
+    },
+    {
+      "id": 9,
+      "topic_id": 1,
+      "english": "Could you tell me a little bit about this product?",
+      "vietnamese": "Bạn có thể giới thiệu cho tôi về sản phẩm này không?"
+    },
+    {
+      "id": 10,
+      "topic_id": 1,
+      "english": "He isn’t here, please leave a message.",
+      "vietnamese": "Anh ấy không ở đây, hãy để lại lời nhắn nhé!"
+    },
+    {
+      "id": 11,
+      "topic_id": 2,
+      "english": "May I speak to you, please?",
+      "vietnamese": "Tôi có thể nói chuyện với bạn được không?"
+    },
+    {
+      "id": 12,
+      "topic_id": 2,
+      "english": "Could I ask who is calling please?",
+      "vietnamese": "Bạn đang gọi điện cho ai vậy?"
+    },
+    {
+      "id": 13,
+      "topic_id": 2,
+      "english": "Call you later.",
+      "vietnamese": "Tôi sẽ gọi bạn sau nhé!"
+    },
+    {
+      "id": 14,
+      "topic_id": 2,
+      "english": "Text me or Message",
+      "vietnamese": "Gửi tin nhắn cho tôi nhé!"
+    },
+    {
+      "id": 15,
+      "topic_id": 3,
+      "english": "I’d like to book/ reserve a room on next Sunday",
+      "vietnamese": "Tôi muốn đặt 1 phòng vào chủ nhật tuần tới."
+    },
+    {
+      "id": 16,
+      "topic_id": 3,
+      "english": "Do your hotel have any vacancy?",
+      "vietnamese": "Khách sạn của bạn còn phòng trống không?"
+    },
+    {
+      "id": 17,
+      "topic_id": 3,
+      "english": "What is the price for one night?",
+      "vietnamese": "Một đêm ở đây giá bao nhiêu vậy?"
+    },
+    {
+      "id": 18,
+      "topic_id": 3,
+      "english": "Could I change to a room with a balcony, please",
+      "vietnamese": "Tôi muốn đổi sang phòng có ban công được không?"
+    },
+    {
+      "id": 19,
+      "topic_id": 3,
+      "english": "I would like to cancel my reservation.",
+      "vietnamese": "Tôi muốn hủy phòng đã đặt."
+    },
+    {
+      "id": 20,
+      "topic_id": 4,
+      "english": "Could I see the menu please!",
+      "vietnamese": "Bạn có thể cho tôi xem thực đơn được không?"
+    },
+    {
+      "id": 21,
+      "topic_id": 4,
+      "english": "We aren’t ready to order yet. Could you give us a few more minutes please?",
+      "vietnamese": "Tôi vẫn chưa sẵn sàng gọi món, làm ơn đợi tôi ít phút nhé!"
+    },
+    {
+      "id": 22,
+      "topic_id": 1,
+      "english": "Do you have… (product)?",
+      "vietnamese": "Bạn có sản phẩm này không?"
+    },
+    {
+      "id": 23,
+      "topic_id": 1,
+      "english": "Do you have different size or color?",
+      "vietnamese": "Bạn có cỡ hoặc màu khác không?"
+    },
+    {
+      "id": 24,
+      "topic_id": 1,
+      "english": "Can I try it on?",
+      "vietnamese": "Tôi có thể thử nó được không?"
+    }
+  ]
+}

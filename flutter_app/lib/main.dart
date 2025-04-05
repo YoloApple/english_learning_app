@@ -7,9 +7,12 @@ import 'package:flutter_app/pages/exercise_screen.dart';
 import 'package:flutter_app/pages/falshcard_screen.dart';
 import 'package:flutter_app/pages/grammar_screen.dart';
 import 'package:flutter_app/pages/register_screen.dart';
+import 'package:flutter_app/pages/speaking_form_page.dart';
+import 'package:flutter_app/pages/speaking_list_page.dart';
 import 'package:flutter_app/pages/tense_list_screen.dart';
 import 'package:flutter_app/pages/vocab_screen.dart';
 import 'package:flutter_app/providers/conversation_provider.dart';
+import 'package:flutter_app/providers/speaking_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_app/providers/setting_provider.dart';
 import 'package:flutter_app/pages/home_screen.dart';
@@ -29,8 +32,6 @@ Future<void> main() async {
     fileName: '.env',
   );
 
-
-
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
@@ -42,6 +43,7 @@ Future<void> main() async {
       providers: [
         ChangeNotifierProvider(create: (context) => SettingsProvider()),
         ChangeNotifierProvider(create: (context) => ConversationProvider()),
+        ChangeNotifierProvider(create: (context) => SpeakingProvider())
         // Các provider khác nếu có
       ],
       child: const MyApp(),
@@ -73,7 +75,9 @@ class MyApp extends StatelessWidget {
         '/grammar': (context) => GrammarScreen(tense: {}),  // Chú ý: Cần truyền dữ liệu tense đúng
         '/exercise': (context) => ExerciseScreen(tense: {}), // Chú ý: Cần truyền dữ liệu tense đúng
         '/flashcard': (context) => FlashcardScreen(),
-        '/conversation_message':(context) => ConversationMessageScreen()
+        '/conversation_message':(context) => ConversationMessageScreen(),
+        '/speaking_form_page': (context) => SpeakingFormPage(),
+        '/speaking_list_page': (context) => SpeakingListPage(),
       },
     );
   }
