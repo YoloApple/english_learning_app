@@ -1,27 +1,31 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
+import '../models/conversation_speaking_model.dart';
 import '../models/speaking_model.dart';
 
 class SpeakingService {
   List<SpeakingTopic> _topics = [];
+  List<Conversation> _conversations = [];
 
   Future<void> loadSpeakingData() async {
     try {
-      String jsonString = await rootBundle.loadString('assets/speaking.json');
+      final jsonString = await rootBundle.loadString('assets/speaking.json');
       final jsonData = json.decode(jsonString);
+
+      // Load topics
       final topicList = jsonData['topics'] as List;
       _topics = topicList.map((e) => SpeakingTopic.fromJson(e)).toList();
-      print("Đã load ${_topics.length} topics");
+
+      // Load conversations
+      final convList = jsonData['conversations'] as List;
+      _conversations = convList.map((e) => Conversation.fromJson(e)).toList();
+
+      print("Loaded ${_topics.length} topics and ${_conversations.length} conversations");
     } catch (e) {
-      print("Lỗi khi load dữ liệu: $e");
+      print("Error loading speaking data: $e");
     }
   }
 
-
   List<SpeakingTopic> get topics => _topics;
-
-  void addSpeakingTopic(SpeakingTopic topic) {
-    _topics.add(topic);
-    // Nếu muốn lưu lại vào file JSON, cần thêm chức năng ghi dữ liệu ra file.
-  }
+  List<Conversation> get conversations => _conversations;
 }

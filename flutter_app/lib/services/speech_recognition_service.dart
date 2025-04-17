@@ -1,20 +1,40 @@
+// lib/services/speech_recognition_service.dart
+
+import 'package:speech_to_text/speech_recognition_error.dart';
 import 'package:speech_to_text/speech_to_text.dart';
+import 'package:flutter/foundation.dart';
 
 class SpeechRecognitionService {
   final SpeechToText _speech = SpeechToText();
+  bool _isInitialized = false;
+
+  /// Callback sẽ được gọi khi speech recognition kết thúc
+  VoidCallback? onSpeechDone;
+
+  Future<bool> initSpeech() async {
+    _isInitialized = await _speech.initialize(
+      onStatus: _statusListener,
+      onError: _errorListener,
+      debugLogging: true,
+    );
+    return _isInitialized;
+  }
 
   bool get isListening => _speech.isListening;
 
-  Future<bool> initSpeech() async {
-    return await _speech.initialize();
-  }
+  Future<void> startListening(
+      Function(String, bool) onResult, {
+        String localeId = 'en_US',
+      }) async {
+    if (!_isInitialized) await initSpeech();
 
-  Future<void> startListening(Function(String) onResult) async {
     await _speech.listen(
-      onResult: (result) {
-        onResult(result.recognizedWords);
-      },
+      onResult: (result) => onResult(result.recognizedWords, result.finalResult),
+      localeId: localeId,
       listenMode: ListenMode.dictation,
+      partialResults: true,
+      pauseFor: const Duration(seconds: 60),
+      listenFor: const Duration(minutes: 10),
     );
   }
 
@@ -22,14 +42,22 @@ class SpeechRecognitionService {
     await _speech.stop();
   }
 
-  void cancel() {
-    _speech.cancel();
+  Future<List<LocaleName>> locales() => _speech.locales();
+
+  void _statusListener(String status) {
+    if (kDebugMode) {
+      print('Speech status: $status');
+    }
+    if (status == 'done' || status == 'notListening') {
+      // Gọi callback khi kết thúc
+      onSpeechDone?.call();
+    }
   }
 
-  // 🔽 Hàm giả lập: xử lý âm thanh từ file
-  Future<String> recognizeSpeechFromFile(String filePath) async {
-    // TODO: Kết nối API nhận diện từ file nếu có
-    await Future.delayed(Duration(seconds: 2));
-    return "This is a sample recognized speech from audio file.";
+  void _errorListener(SpeechRecognitionError error) {
+    if (kDebugMode) {
+      print('Speech recognition error: ${error.errorMsg} - permanent: ${error.permanent}');
+    }
+    // Bạn có thể xử lý lỗi ở đây
   }
 }

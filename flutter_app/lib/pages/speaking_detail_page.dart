@@ -1,159 +1,226 @@
+// lib/pages/speaking_detail_page.dart
+
 import 'package:flutter/material.dart';
-import 'package:flutter_sound_lite/flutter_sound.dart';
-import 'package:permission_handler/permission_handler.dart';
+import '../models/conversation_speaking_model.dart';
 import '../models/speaking_model.dart';
 import '../services/speech_recognition_service.dart';
 
 class SpeakingDetailPage extends StatefulWidget {
   final SpeakingTopic topic;
-
-  const SpeakingDetailPage({super.key, required this.topic});
+  const SpeakingDetailPage({Key? key, required this.topic}) : super(key: key);
 
   @override
   _SpeakingDetailPageState createState() => _SpeakingDetailPageState();
 }
 
 class _SpeakingDetailPageState extends State<SpeakingDetailPage> {
-  final FlutterSoundRecorder _recorder = FlutterSoundRecorder();
   final SpeechRecognitionService _speechService = SpeechRecognitionService();
 
-  bool _isRecording = false;
-  String? _recordedFilePath;
+  bool _isListening = false;
   String _recognizedText = '';
-  String _checkResult = '';
+  String _interimText = '';
+  Widget? _comparisonWidget;
 
   @override
   void initState() {
     super.initState();
-    _initRecorder();
     _speechService.initSpeech();
+    _speechService.onSpeechDone = () {
+      // đảm bảo tắt loading khi engine thực sự dừng
+      setState(() => _isListening = false);
+    };
   }
 
-  Future<void> _initRecorder() async {
-    await Permission.microphone.request();
-    await _recorder.openAudioSession();
-  }
-
-  Future<void> _startRecording() async {
-    final filePath = 'audio.wav';
-    await _recorder.startRecorder(toFile: filePath);
+  /// Xóa hết text cũ và widget so sánh
+  void _resetRecognition() {
     setState(() {
-      _isRecording = true;
-      _recordedFilePath = filePath;
-      _checkResult = '';
       _recognizedText = '';
+      _interimText = '';
+      _comparisonWidget = null;
     });
   }
 
-  Future<void> _stopRecording() async {
-    await _recorder.stopRecorder();
+  /// Callback nhận kết quả từ service
+  void _onSpeechResult(String newText, bool isFinal) {
     setState(() {
-      _isRecording = false;
+      if (isFinal) {
+        _recognizedText = _recognizedText.isEmpty
+            ? newText
+            : '$_recognizedText $newText';
+        _interimText = '';
+      } else {
+        _interimText = newText;
+      }
     });
-
-    if (_recordedFilePath != null) {
-      final recognized = await _speechService.recognizeSpeechFromFile(_recordedFilePath!);
-      setState(() {
-        _recognizedText = recognized;
-      });
-    }
   }
 
+  /// Bấm Bắt đầu: reset vùng dưới và start lại
+  void _startListening() async {
+    _resetRecognition();
+    await _speechService.startListening(
+      _onSpeechResult,
+      localeId: 'en_US',
+    );
+    setState(() => _isListening = true);
+  }
+
+  /// Bấm Tạm dừng: stop và đảm bảo flag false
+  void _stopListening() async {
+    await _speechService.stopListening();
+    setState(() => _isListening = false);
+  }
+
+  /// Bấm Tiếp tục: chỉ start nếu đang tắt
+  void _continueListening() async {
+    if (_isListening) return;
+    await _speechService.startListening(
+      _onSpeechResult,
+      localeId: 'en_US',
+    );
+    setState(() => _isListening = true);
+  }
+
+  /// So sánh phát âm
   void _checkPronunciation() {
     if (_recognizedText.isEmpty) {
-      _showSnackBar("Chưa nhận diện được giọng nói.");
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('Chưa nhận diện được giọng nói.')));
       return;
     }
 
-    final original = widget.topic.content.english.toLowerCase().trim();
-    final spoken = _recognizedText.toLowerCase().trim();
+    late final String original;
 
-    // Tính độ tương đồng (simple comparison)
-    if (spoken == original) {
-      _checkResult = "Phát âm rất tốt!";
+    if (widget.topic.content is SpeakingContent) {
+      original = (widget.topic.content as SpeakingContent).english;
+    } else if (widget.topic.content is Conversation) {
+      original = (widget.topic.content as Conversation).english;
     } else {
-      _checkResult = "Cần cải thiện. Bạn đã nói: \n\"$_recognizedText\"";
+      original = '';
     }
 
-    setState(() {});
-  }
+    final origWords = original.toLowerCase().trim().split(' ');
+    final spokenWords = _recognizedText.toLowerCase().trim().split(' ');
 
-  void _showSnackBar(String message) {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
-  }
 
-  @override
-  void dispose() {
-    _recorder.closeAudioSession();
-    super.dispose();
+    setState(() {
+      _comparisonWidget = RichText(
+        text: TextSpan(
+          style: const TextStyle(fontSize: 16, color: Colors.black),
+          children: List.generate(origWords.length, (i) {
+            final correct = i < spokenWords.length && origWords[i] == spokenWords[i];
+            return TextSpan(
+              text: '${origWords[i]} ',
+              style: TextStyle(
+                color: correct ? Colors.black : Colors.red,
+                fontWeight: correct ? FontWeight.normal : FontWeight.bold,
+              ),
+            );
+          }),
+        ),
+      );
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    final englishText = widget.topic.content.english;
+    late final String englishText;
+
+    if (widget.topic.content is SpeakingContent) {
+      englishText = (widget.topic.content as SpeakingContent).english;
+    } else if (widget.topic.content is Conversation) {
+      englishText = (widget.topic.content as Conversation).english;
+    } else {
+      englishText = 'Không có nội dung';
+    }
 
     return Scaffold(
       appBar: AppBar(title: Text(widget.topic.name)),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
+      body: SafeArea(
         child: Column(
           children: [
-            // Đoạn văn tiếng Anh
-            Text(
-              englishText,
-              style: TextStyle(fontSize: 18),
-            ),
-            SizedBox(height: 24),
-
-            // Ghi âm
-            ElevatedButton.icon(
-              onPressed: _isRecording ? _stopRecording : _startRecording,
-              icon: Icon(_isRecording ? Icons.stop : Icons.mic, color: Colors.white),
-              label: Text(
-                _isRecording ? "Dừng ghi âm" : "Ghi âm",
-                style: TextStyle(fontSize: 16, color: Colors.white),
-              ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: _isRecording ? Colors.red : Colors.green,
-                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-              ),
-            ),
-
-            SizedBox(height: 20),
-
-            // Kiểm tra phát âm
-            ElevatedButton.icon(
-              onPressed: _checkPronunciation,
-              icon: Icon(Icons.check, color: Colors.white),
-              label: Text(
-                "Kiểm tra phát âm",
-                style: TextStyle(fontSize: 16, color: Colors.white),
-              ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue,
-                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-              ),
-            ),
-
-            SizedBox(height: 24),
-
-            // Hiển thị kết quả
-            if (_checkResult.isNotEmpty)
-              Container(
-                padding: EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Colors.blue.shade50,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Kết quả:", style: TextStyle(fontWeight: FontWeight.bold)),
-                    SizedBox(height: 10),
-                    Text(_checkResult, style: TextStyle(fontSize: 16)),
-                  ],
+            // Vùng hiển thị đoạn gốc
+            Expanded(
+              flex: 2,
+              child: Container(
+                padding: const EdgeInsets.all(16),
+                color: Colors.grey.shade100,
+                child: SingleChildScrollView(
+                  child: Text(englishText, style: const TextStyle(fontSize: 18)),
                 ),
               ),
+            ),
+
+            // Vùng hiển thị kết quả/interim hoặc so sánh
+            Expanded(
+              flex: 2,
+              child: Container(
+                padding: const EdgeInsets.all(16),
+                color: Colors.blue.shade50,
+                child: SingleChildScrollView(
+                  child: _comparisonWidget != null
+                      ? _comparisonWidget!
+                      : Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          _interimText.isNotEmpty
+                              ? _interimText
+                              : (_recognizedText.isNotEmpty
+                              ? _recognizedText
+                              : 'Kết quả sẽ hiện ở đây'),
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
+                      ),
+                      if (_isListening)
+                        const Padding(
+                          padding: EdgeInsets.only(left: 8),
+                          child: SizedBox(
+                            width: 20,
+                            height: 20,
+                            child: CircularProgressIndicator(strokeWidth: 2),
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+
+            // Nút điều khiển
+            Container(
+              color: Colors.white,
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: ElevatedButton.icon(
+                      onPressed: _isListening ? _stopListening : _startListening,
+                      icon: Icon(_isListening ? Icons.pause : Icons.mic),
+                      label: Text(_isListening ? 'Tạm dừng' : 'Bắt đầu'),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: ElevatedButton.icon(
+                      onPressed: _continueListening,
+                      icon: const Icon(Icons.play_arrow),
+                      label: const Text('Tiếp tục'),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: ElevatedButton.icon(
+                      onPressed: _checkPronunciation,
+                      icon: const Icon(Icons.check),
+                      label: const Text('Kiểm tra'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

@@ -6,6 +6,8 @@ import 'package:flutter_app/pages/conversation_screen.dart';
 import 'package:flutter_app/pages/exercise_screen.dart';
 import 'package:flutter_app/pages/falshcard_screen.dart';
 import 'package:flutter_app/pages/grammar_screen.dart';
+import 'package:flutter_app/pages/listening_detail_page.dart';
+import 'package:flutter_app/pages/listening_list__page.dart';
 import 'package:flutter_app/pages/register_screen.dart';
 import 'package:flutter_app/pages/speaking_form_page.dart';
 import 'package:flutter_app/pages/speaking_list_page.dart';
@@ -78,6 +80,7 @@ class MyApp extends StatelessWidget {
         '/conversation_message':(context) => ConversationMessageScreen(),
         '/speaking_form_page': (context) => SpeakingFormPage(),
         '/speaking_list_page': (context) => SpeakingListPage(),
+        '/listening_list_page': (context) => ListeningListPage(),
       },
     );
   }

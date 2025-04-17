@@ -53,6 +53,8 @@ dependencies:
   flutter_sound_lite: ^8.5.0
   permission_handler: ^11.0.0
   speech_to_text: ^6.1.0
+  path_provider: ^2.1.1
+  googleapis_auth: ^1.4.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -87,6 +89,8 @@ flutter:
       - assets/flashcard.json
       - .env
       - assets/speaking.json
+      - assets/english-learning-app-d0f7e-664687aa48b9.json
+      - assets/audio/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
