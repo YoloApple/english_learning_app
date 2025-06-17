@@ -136,20 +136,20 @@ english-learning-app/
 <table>
   <tr>
     <td align="center" width="200">
-      <img src="/images/z6714363419879_9f8055ab8dfc13491e684b57120c5b4a.jpg" width="180" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+      <img src="images/z6714363419879_9f8055ab8dfc13491e684b57120c5b4a.jpg" width="180" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
       <br/><sub><b>📚 Tra từ vựng</b></sub>
     </td>
     <td align="center" width="200">
-      <img src="C:\Code\english-learning-app\images\z6714363432129_1ed3495cd8707b881357f1f87923c78c.jpg" 
+      <img src="images/z6714363432129_1ed3495cd8707b881357f1f87923c78c.jpg" 
       width="180" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
       <br/><sub><b>🎧 Luyện nghe</b></sub>
     </td>
     <td align="center" width="200">
-      <img src="C:\Code\english-learning-app\images\z6714363420786_93831e9f262d215d8264c33ac42e2f49.jpg" width="180" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+      <img src="images/z6714363420786_93831e9f262d215d8264c33ac42e2f49.jpg" width="180" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
       <br/><sub><b>🗣️ Luyện nói</b></sub>
     </td>
     <td align="center" width="200">
-      <img src="C:\Code\english-learning-app\images\z6714363419605_2e2c65f7fdb1759cb8c9400c0523c375.jpg" width="180" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+      <img src="images/z6714363419605_2e2c65f7fdb1759cb8c9400c0523c375.jpg" width="180" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
       <br/><sub><b>📝 Bài tập</b></sub>
     </td>
   </tr>
