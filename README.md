@@ -159,11 +159,11 @@ english-learning-app/
 <table>
   <tr>
     <td align="center" width="300">
-      <img src="C:\Code\english-learning-app\images\z6714363438101_0ff2500064d8d64af0ec150729145624.jpg" width="250" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+      <img src="images/z6714363438101_0ff2500064d8d64af0ec150729145624.jpg" width="250" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
       <br/><sub><b>🤖 Chat với AI</b></sub>
     </td>
     <td align="center" width="300">
-      <img src="C:\Code\english-learning-app\images\z6714363415070_34390d8052f35acf86d416e1b8b47c71.jpg" width="250" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+      <img src="images/z6714363415070_34390d8052f35acf86d416e1b8b47c71.jpg" width="250" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
       <br/><sub><b>⚙️ Cài đặt</b></sub>
     </td>
   </tr>
